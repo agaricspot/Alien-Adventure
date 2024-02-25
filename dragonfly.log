@@ -1,0 +1,11 @@
+13:52:10    0 ****************************************************
+13:52:10    0 ** Dragonfly version 4.19 **
+13:52:10    0 ** Game engine started **
+13:52:10    0 ****************************************************
+13:52:11   15 GameManager::run(): Can't keep up! frame_time 33 ms, split 39 ms
+13:52:11   21 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
+13:52:11   22 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+13:52:13   90 RM::loadSprite(): Loading sprite 'sprites/hero-spr.txt'.
+13:52:13   90 RM::loadSprite(): Loading sprite 'sprites/arrowleft-spr.txt'.
+13:52:13   90 RM::loadSprite(): Loading sprite 'sprites/arrowright-spr.txt'.
+13:52:13   90 RM::loadSprite(): Loading sprite 'sprites/enemy-spr.txt'.
