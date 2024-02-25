@@ -1,0 +1,17 @@
+<HEADER>
+frames 1
+width 13
+height 4
+color purple
+slowdown 0
+</HEADER>
+<BODY>
+        __   
+  ___ // <[]>
+<[]> //      
+     ||       
+end
+</BODY>
+<FOOTER>
+version 1
+</FOOTER>
