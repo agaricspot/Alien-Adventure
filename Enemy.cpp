@@ -18,7 +18,7 @@ Enemy::Enemy() {
 }
 
 Enemy::~Enemy() {
-	//destroy
+	//destroy the enemy
 }
 
 //Track the hero and set the direction towards them.
