@@ -17,6 +17,8 @@ Arrow::Arrow(df::Vector pos, bool facing) {
 	setSolidness(df::SOFT);
 	setAltitude(1);
 	setType("Arrow");
+	registerInterest(df::OUT_EVENT);
+	registerInterest(df::COLLISION_EVENT);
 	// Set starting location, based on hero's position passed in.
 	df::Vector p(pos.getX() + 3, pos.getY());
 	setPosition(p);

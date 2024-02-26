@@ -4,6 +4,9 @@
 
 #include "WorldManager.h"
 #include "EventStep.h"
+#include "EventOut.h"
+
+#include <iostream>
 
 
 Hero::Hero() {
@@ -11,8 +14,9 @@ Hero::Hero() {
 	registerInterest(df::KEYBOARD_EVENT);
 	registerInterest(df::STEP_EVENT);
 	registerInterest(df::MSE_EVENT);
+	registerInterest(df::OUT_EVENT);
 	setType("Hero");
-	df::Vector p(WM.getBoundary().getHorizontal() / 2, WM.getBoundary().getVertical() / 2);
+	df::Vector p(40, 12);
 	setPosition(p);
 	cur_weapon = BOW;
 }
@@ -46,6 +50,11 @@ int Hero::eventHandler(const df::Event* p_e) {
 	if (p_e->getType() == DAMAGE_EVENT) {
 		// If the hero gets damaged, remove it for now. May add health later.
 		defeat();
+		return 1;
+	}
+	if(p_e->getType() == df::OUT_EVENT) {
+		// If the hero gets damaged, remove it for now. May add health later.
+		std::cout << "left the world" << std::endl;
 		return 1;
 	}
 	return 0;

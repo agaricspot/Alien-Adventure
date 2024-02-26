@@ -9,6 +9,7 @@
 #include "LogManager.h"
 #include "ResourceManager.h"
 #include "WorldManager.h"
+#include "DisplayManager.h"
 
 
 // Game code includes
@@ -34,12 +35,20 @@ int main(int argc, char* argv[]) {
     // Show splash screen.
     df::splash();
 
+    //Set the world size to a larger world.
     df::Box world_size = WM.getBoundary();
+    world_size.setHorizontal(400);
+    world_size.setVertical(120);
+    WM.setBoundary(world_size);
     std::cout << "X: " << world_size.getHorizontal() << " Y: " << world_size.getVertical();
+    //Set the view to the left center
+    df::Box init_view(df::Vector(0, 72), 80, 24);
+    WM.setView(init_view);
     
     loadResources();
 
     new Hero();
+
     new Reticle();
 
     new Enemy();

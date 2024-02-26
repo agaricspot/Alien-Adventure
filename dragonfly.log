@@ -1,8 +1,10 @@
-16:03:04    0 ****************************************************
-16:03:04    0 ** Dragonfly version 4.19 **
-16:03:04    0 ** Game engine started **
-16:03:04    0 ****************************************************
-16:03:08   90 RM::loadSprite(): Loading sprite 'sprites/hero-spr.txt'.
-16:03:08   90 RM::loadSprite(): Loading sprite 'sprites/arrowleft-spr.txt'.
-16:03:08   90 RM::loadSprite(): Loading sprite 'sprites/arrowright-spr.txt'.
-16:03:08   90 RM::loadSprite(): Loading sprite 'sprites/enemy-spr.txt'.
+17:49:27    0 ****************************************************
+17:49:27    0 ** Dragonfly version 4.19 **
+17:49:27    0 ** Game engine started **
+17:49:27    0 ****************************************************
+17:49:30   90 RM::loadSprite(): Loading sprite 'sprites/hero-spr.txt'.
+17:49:30   90 RM::loadSprite(): Loading sprite 'sprites/arrowleft-spr.txt'.
+17:49:30   90 RM::loadSprite(): Loading sprite 'sprites/arrowright-spr.txt'.
+17:49:30   90 RM::loadSprite(): Loading sprite 'sprites/enemy-spr.txt'.
+17:49:30   90 WorldManager::isValid(): Event df-out handled automatically.
+17:49:30   90 Manager(WorldManager)::registerInterest(): Event 'df-out' not valid for this Manager
