@@ -42,7 +42,7 @@ int main(int argc, char* argv[]) {
     WM.setBoundary(world_size);
     std::cout << "X: " << world_size.getHorizontal() << " Y: " << world_size.getVertical();
     //Set the view to the left center
-    df::Box init_view(df::Vector(0, 72), 80, 24);
+    df::Box init_view(df::Vector(0, 48), 80, 24);
     WM.setView(init_view);
     
     loadResources();

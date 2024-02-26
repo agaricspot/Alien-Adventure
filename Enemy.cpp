@@ -13,8 +13,8 @@ Enemy::Enemy() {
 	setType("Enemy");
 	registerInterest(df::STEP_EVENT);
 	setSprite("enemy");
-	setPosition(df::Vector(0, 0));
-	setSpeed(0.2);
+	setPosition(df::Vector(0, 48));
+	setSpeed(0.15);
 }
 
 Enemy::~Enemy() {
@@ -24,6 +24,10 @@ Enemy::~Enemy() {
 //Track the hero and set the direction towards them.
 void Enemy::track() {
 	df::ObjectList heroList = WM.objectsOfType("Hero");
+	if (heroList.isEmpty()) {
+		setVelocity(df::Vector(0, 0));
+		return;
+	}
 	df::Object* hero = heroList[0];
 
 	df::Vector e_pos = getPosition();
@@ -43,15 +47,26 @@ int Enemy::eventHandler(const df::Event* p_e) {
 			attack_countdown = 0;
 		}
 		track();
+		if (detectDistance() < 0) {
+			return -1;
+		}
 		if(detectDistance() < 3)
 			attack();
 		return 1;
 	}
+	if (p_e->getType() == DAMAGE_EVENT) {
+		//delete when it gets hit
+		WM.markForDelete(this);
+	}
+	return 0;
 }
 
 //Calculate the distance from the enemy to the hero.
 float Enemy::detectDistance() {
 	df::ObjectList heroList = WM.objectsOfType("Hero");
+	if (heroList.isEmpty()) {
+		return -1;
+	}
 	df::Object* hero = heroList[0];
 
 	df::Vector e_pos = getPosition();

@@ -1,7 +1,7 @@
 #include "EventDamage.h"
 
 EventDamage::EventDamage(int d) {
-	setType("DamageEvent");
+	setType("damage");
 	setDamage(d);
 }
 

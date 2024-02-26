@@ -59,15 +59,18 @@ void Arrow::hit(const df::EventCollision* collision_event) {
 	if (piercing) {
 		if ((collision_event->getObject1()->getType() == "Enemy")) {
 			//create and send a damage event to the relevant objects
+			std::cout << "Collided with enemy" << std::endl;
 			EventDamage damage(1);
 			collision_event->getObject1()->eventHandler(&damage);
 		}
 		else if ((collision_event->getObject2()->getType() == "Enemy")) {
+			std::cout << "Collided with enemy" << std::endl;
 			EventDamage damage(1);
 			collision_event->getObject2()->eventHandler(&damage);
 		}
 	}
 	else if ((collision_event->getObject1()->getType() == "Enemy") || (collision_event->getObject2()->getType() == "Enemy")) {
+		std::cout << "Collided with enemy" << std::endl;
 		EventDamage damage(1);
 		collision_event->getObject1()->eventHandler(&damage);
 		collision_event->getObject2()->eventHandler(&damage);

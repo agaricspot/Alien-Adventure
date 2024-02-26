@@ -16,14 +16,13 @@ Hero::Hero() {
 	registerInterest(df::MSE_EVENT);
 	registerInterest(df::OUT_EVENT);
 	setType("Hero");
-	df::Vector p(40, 12);
+	df::Vector p(40, 56);
 	setPosition(p);
 	cur_weapon = BOW;
 }
 
 Hero::~Hero() { //do nothing for now
-	// Mark Reticle for deletion.
-	//WM.markForDelete(p_reticle);
+
 	//Set the sprite to the dead hero
 	//setSprite("dead");
 	
@@ -85,10 +84,10 @@ void Hero::keyboard(const df::EventKeyboard* keyboard_event) {
 
 // Mouse clicks. This fires the weapon with left click
 void Hero::mouse(const df::EventMouse* mouse_event) {
-		if ((mouse_event->getMouseAction() == df::CLICKED) &&
-			(mouse_event->getMouseButton() == df::Mouse::LEFT))
-			attack(mouse_event->getMousePosition(), cur_weapon);
-
+	if ((mouse_event->getMouseAction() == df::CLICKED) && (mouse_event->getMouseButton() == df::Mouse::LEFT)) {
+		df::Vector adjusted_pos(mouse_event->getMousePosition().getX() + (80 * 0), mouse_event->getMousePosition().getY() + (24 * 2));
+		attack(adjusted_pos, cur_weapon);
+	}
 }
 
 void Hero::step() {

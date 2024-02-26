@@ -4,6 +4,8 @@
 #include "DisplayManager.h"
 #include "WorldManager.h"
 
+#include <iostream>
+
 //Create a reticle for aiming arrows or sword direction
 Reticle::Reticle() {
 	//Set attributes
@@ -13,9 +15,7 @@ Reticle::Reticle() {
 	//Register interest for mouse events
 	registerInterest(df::MSE_EVENT);
 	//Start in the middle of the screen
-	int world_horizontal = (int)WM.getBoundary().getHorizontal();
-	int world_vertical = (int)WM.getBoundary().getVertical();
-	df::Vector p(world_horizontal / 2, world_vertical / 2);
+	df::Vector p(40, 56);
 	setPosition(p);
 }
 
@@ -30,7 +30,9 @@ int Reticle::eventHandler(const df::Event* p_e) {
 		const df::EventMouse* mouse_event = dynamic_cast <const df::EventMouse*> (p_e);
 		if (mouse_event->getMouseAction() == df::MOVED) {
 			// Change location to new mouse position.
-			setPosition(mouse_event->getMousePosition());
+			df::Vector adjusted_pos(mouse_event->getMousePosition().getX() + (80 * 0), mouse_event->getMousePosition().getY() + (24 * 2));
+			setPosition(adjusted_pos);
+			//std::cout << "Mouse position: " << adjusted_pos.toString() <<std::endl;
 			return 1;
 		}
 	}
