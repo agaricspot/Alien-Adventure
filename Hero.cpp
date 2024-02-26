@@ -89,6 +89,18 @@ void Hero::mouse(const df::EventMouse* mouse_event) {
 		df::Vector adjusted_pos(mouse_event->getMousePosition().getX() + (80 * 0), mouse_event->getMousePosition().getY() + (24 * 2));
 		attack(adjusted_pos, cur_weapon);
 	}
+	if ((mouse_event->getMouseAction() == df::CLICKED) && (mouse_event->getMouseButton() == df::Mouse::RIGHT)) {
+		switch (cur_weapon) {
+		case SWORD:
+			cur_weapon = BOW;
+			std::cout << cur_weapon;
+			break;
+		case BOW:
+			cur_weapon = SWORD;
+			std::cout << cur_weapon;
+			break;
+		}
+	}
 }
 
 void Hero::step() {
@@ -116,21 +128,23 @@ void Hero::attack(df::Vector target, WEAPON weapon) {
 		bool direction = (target.getX() > getPosition().getX());
 		Arrow* p = new Arrow(getPosition(), direction);
 		p->setVelocity(v);
-	} else if (weapon == SWORD) {
+	} 
+	else if (weapon == SWORD) {
+		//Look at all objects
 		df::ObjectList all = WM.getAllObjects();
-		df::ObjectList close;
 		df::ObjectListIterator li(&all);
 		while (!li.isDone()) {
-			if (detectDistance(li.currentObject()) < 4) {
-				close.insert(li.currentObject());
-				li.next();
+			//If they're within 4 distance
+			if (detectDistance(li.currentObject()) < 8 && li.currentObject()->getType() != "Hero") {
+				//Give them a damage event. This makes the sword a sweep attack. I'm fine with that.
+				EventDamage damage(1);
+				std::cout << "Found a nearby object!" << std::endl;
+				li.currentObject()->eventHandler(&damage);
 			}
+			li.next();
+			std::cout << "Stuck looking for objects!" << std::endl;
 		}
-		df::ObjectListIterator il(&close);
-		while (!il.isDone()) {
-			EventDamage damage(1);
-			il.currentObject()->eventHandler(&damage);
-		}
+		std::cout << "Escaped looking for objects!" << std::endl;
 	}
 }
 

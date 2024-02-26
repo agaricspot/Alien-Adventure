@@ -1,25 +1,19 @@
-09:47:38    0 ****************************************************
-09:47:38    0 ** Dragonfly version 4.19 **
-09:47:38    0 ** Game engine started **
-09:47:38    0 ****************************************************
-09:47:40   24 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
-09:47:40   41 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
-09:47:40   42 GameManager::run(): Can't keep up! frame_time 33 ms, split 35 ms
-09:47:41   70 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
-09:47:41   81 GameManager::run(): Can't keep up! frame_time 33 ms, split 44 ms
-09:47:42   82 GameManager::run(): Can't keep up! frame_time 33 ms, split 39 ms
-09:47:42   87 GameManager::run(): Can't keep up! frame_time 33 ms, split 35 ms
-09:47:42   90 RM::loadSprite(): Loading sprite 'sprites/hero-spr.txt'.
-09:47:42   90 RM::loadSprite(): Loading sprite 'sprites/arrowleft-spr.txt'.
-09:47:42   90 RM::loadSprite(): Loading sprite 'sprites/arrowright-spr.txt'.
-09:47:42   90 RM::loadSprite(): Loading sprite 'sprites/enemy-spr.txt'.
-09:47:42   90 WorldManager::isValid(): Event df-out handled automatically.
-09:47:42   90 Manager(WorldManager)::registerInterest(): Event 'df-out' not valid for this Manager
-09:47:42   21 WorldManager::isValid(): Event df-out handled automatically.
-09:47:42   21 Manager(WorldManager)::registerInterest(): Event 'df-out' not valid for this Manager
-09:47:42   21 WorldManager::isValid(): Event df-collision handled automatically.
-09:47:42   21 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
-09:47:44   81 WorldManager::isValid(): Event df-out handled automatically.
-09:47:44   81 Manager(WorldManager)::registerInterest(): Event 'df-out' not valid for this Manager
-09:47:44   81 WorldManager::isValid(): Event df-collision handled automatically.
-09:47:44   81 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+13:25:29    0 ****************************************************
+13:25:29    0 ** Dragonfly version 4.19 **
+13:25:29    0 ** Game engine started **
+13:25:29    0 ****************************************************
+13:25:32   54 GameManager::run(): Can't keep up! frame_time 33 ms, split 35 ms
+13:25:32   61 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+13:25:32   65 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+13:25:32   66 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+13:25:32   67 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
+13:25:32   81 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+13:25:32   82 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+13:25:33   90 RM::loadSprite(): Loading sprite 'sprites/hero-spr.txt'.
+13:25:33   90 RM::loadSprite(): Loading sprite 'sprites/arrowleft-spr.txt'.
+13:25:33   90 RM::loadSprite(): Loading sprite 'sprites/arrowright-spr.txt'.
+13:25:33   90 RM::loadSprite(): Loading sprite 'sprites/enemy-spr.txt'.
+13:25:33   90 WorldManager::isValid(): Event df-out handled automatically.
+13:25:33   90 Manager(WorldManager)::registerInterest(): Event 'df-out' not valid for this Manager
+13:25:34   27 GameManager::run(): Can't keep up! frame_time 33 ms, split 56 ms
+13:25:38  170 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
