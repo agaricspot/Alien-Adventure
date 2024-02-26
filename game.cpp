@@ -2,10 +2,13 @@
 // game.cpp
 // 
 
+#include <iostream>
+
 // Engine includes.
 #include "GameManager.h"
 #include "LogManager.h"
 #include "ResourceManager.h"
+#include "WorldManager.h"
 
 
 // Game code includes
@@ -30,6 +33,9 @@ int main(int argc, char* argv[]) {
 
     // Show splash screen.
     df::splash();
+
+    df::Box world_size = WM.getBoundary();
+    std::cout << "X: " << world_size.getHorizontal() << " Y: " << world_size.getVertical();
     
     loadResources();
 
