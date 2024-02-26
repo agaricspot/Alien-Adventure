@@ -52,6 +52,7 @@ int Arrow::eventHandler(const df::Event* p_e) {
 
 void Arrow::out() {
 	//Destroy the arrow if it leaves the window.
+	std::cout << "Arrow out" << std::endl;
 	WM.markForDelete(this);
 }
 

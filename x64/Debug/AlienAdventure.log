@@ -1,2 +1,7 @@
-﻿  Hero.cpp
-  AlienAdventure.vcxproj -> C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\x64\Debug\AlienAdventure.exe
+﻿  Arrow.cpp
+  MapGrid.cpp
+  Generating Code...
+C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\MapGrid.cpp(14,5): error C2270: 'getX': modifiers not allowed on nonmember functions
+C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\MapGrid.cpp(17,5): error C2270: 'getY': modifiers not allowed on nonmember functions
+C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\MapGrid.cpp(20,48): error C3158: 'eventHandler': 'override' can only be applied to a virtual member function
+C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\MapGrid.cpp(20,5): error C2575: 'eventHandler': only member functions and bases can be virtual
