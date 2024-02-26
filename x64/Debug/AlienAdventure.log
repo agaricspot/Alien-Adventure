@@ -1,2 +1,6 @@
-﻿  Hero.cpp
+﻿  Enemy.cpp
+C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\Enemy.cpp(17,11): warning C4305: 'argument': truncation from 'double' to 'float'
+  Hero.cpp
+  game.cpp
+  Generating Code...
   AlienAdventure.vcxproj -> C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\x64\Debug\AlienAdventure.exe

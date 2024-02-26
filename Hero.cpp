@@ -5,6 +5,7 @@
 #include "WorldManager.h"
 #include "EventStep.h"
 #include "EventOut.h"
+#include "ObjectListIterator.h"
 
 #include <iostream>
 
@@ -115,6 +116,21 @@ void Hero::attack(df::Vector target, WEAPON weapon) {
 		bool direction = (target.getX() > getPosition().getX());
 		Arrow* p = new Arrow(getPosition(), direction);
 		p->setVelocity(v);
+	} else if (weapon == SWORD) {
+		df::ObjectList all = WM.getAllObjects();
+		df::ObjectList close;
+		df::ObjectListIterator li(&all);
+		while (!li.isDone()) {
+			if (detectDistance(li.currentObject()) < 4) {
+				close.insert(li.currentObject());
+				li.next();
+			}
+		}
+		df::ObjectListIterator il(&close);
+		while (!il.isDone()) {
+			EventDamage damage(1);
+			il.currentObject()->eventHandler(&damage);
+		}
 	}
 }
 
@@ -133,4 +149,14 @@ void Hero::move(int dx, int dy) {
 void Hero::defeat() {
 	//Dead sprite, stuff, etc.
 	WM.markForDelete(this);
+}
+
+float Hero::detectDistance(Object *other) const{
+
+	df::Vector o_pos = other->getPosition();
+	df::Vector h_pos = getPosition();
+
+	df::Vector diff = o_pos - h_pos;
+	float distance = diff.getMagnitude();
+	return distance;
 }
