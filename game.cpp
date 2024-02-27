@@ -2,16 +2,21 @@
 // game.cpp
 // 
 
+#include <iostream>
+
 // Engine includes.
 #include "GameManager.h"
 #include "LogManager.h"
 #include "ResourceManager.h"
+#include "WorldManager.h"
+#include "DisplayManager.h"
 
 
 // Game code includes
 #include "Hero.h"
 #include "Reticle.h"
 #include "Enemy.h"
+#include "MapGrid.h"
 
 void loadResources();
 
@@ -30,13 +35,28 @@ int main(int argc, char* argv[]) {
 
     // Show splash screen.
     df::splash();
+
+    //Set the world size to a larger world.
+    df::Box world_size = WM.getBoundary();
+    world_size.setHorizontal(240);
+    world_size.setVertical(72);
+    WM.setBoundary(world_size);
+    std::cout << "X: " << world_size.getHorizontal() << " Y: " << world_size.getVertical();
+    //Set the view to the left center
+    df::Box init_view(df::Vector(0, 24), 80, 24);
+    WM.setView(init_view);
+
     
     loadResources();
 
     new Hero();
+
     new Reticle();
 
     new Enemy();
+
+    new MapGrid(0, 1);
+
 
     GM.run();
 
@@ -52,4 +72,5 @@ void loadResources() {
     RM.loadSprite("sprites/arrowleft-spr.txt", "arrowleft");
     RM.loadSprite("sprites/arrowright-spr.txt", "arrowright");
     RM.loadSprite("sprites/enemy-spr.txt", "enemy");
+    RM.loadSprite("sprites/spawn-level.txt", "cave");
 }

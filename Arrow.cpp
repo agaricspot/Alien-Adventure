@@ -17,6 +17,8 @@ Arrow::Arrow(df::Vector pos, bool facing) {
 	setSolidness(df::SOFT);
 	setAltitude(1);
 	setType("Arrow");
+	registerInterest(df::OUT_EVENT);
+	registerInterest(df::COLLISION_EVENT);
 	// Set starting location, based on hero's position passed in.
 	df::Vector p(pos.getX() + 3, pos.getY());
 	setPosition(p);
@@ -50,6 +52,7 @@ int Arrow::eventHandler(const df::Event* p_e) {
 
 void Arrow::out() {
 	//Destroy the arrow if it leaves the window.
+	std::cout << "Arrow out" << std::endl;
 	WM.markForDelete(this);
 }
 
@@ -57,15 +60,18 @@ void Arrow::hit(const df::EventCollision* collision_event) {
 	if (piercing) {
 		if ((collision_event->getObject1()->getType() == "Enemy")) {
 			//create and send a damage event to the relevant objects
+			std::cout << "Collided with enemy" << std::endl;
 			EventDamage damage(1);
 			collision_event->getObject1()->eventHandler(&damage);
 		}
 		else if ((collision_event->getObject2()->getType() == "Enemy")) {
+			std::cout << "Collided with enemy" << std::endl;
 			EventDamage damage(1);
 			collision_event->getObject2()->eventHandler(&damage);
 		}
 	}
 	else if ((collision_event->getObject1()->getType() == "Enemy") || (collision_event->getObject2()->getType() == "Enemy")) {
+		std::cout << "Collided with enemy" << std::endl;
 		EventDamage damage(1);
 		collision_event->getObject1()->eventHandler(&damage);
 		collision_event->getObject2()->eventHandler(&damage);

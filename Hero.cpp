@@ -4,6 +4,10 @@
 
 #include "WorldManager.h"
 #include "EventStep.h"
+#include "EventOut.h"
+#include "ObjectListIterator.h"
+
+#include <iostream>
 
 
 Hero::Hero() {
@@ -11,15 +15,15 @@ Hero::Hero() {
 	registerInterest(df::KEYBOARD_EVENT);
 	registerInterest(df::STEP_EVENT);
 	registerInterest(df::MSE_EVENT);
+	registerInterest(df::OUT_EVENT);
 	setType("Hero");
-	df::Vector p(WM.getBoundary().getHorizontal() / 2, WM.getBoundary().getVertical() / 2);
+	df::Vector p(40, 36);
 	setPosition(p);
 	cur_weapon = BOW;
 }
 
 Hero::~Hero() { //do nothing for now
-	// Mark Reticle for deletion.
-	//WM.markForDelete(p_reticle);
+
 	//Set the sprite to the dead hero
 	//setSprite("dead");
 	
@@ -46,6 +50,11 @@ int Hero::eventHandler(const df::Event* p_e) {
 	if (p_e->getType() == DAMAGE_EVENT) {
 		// If the hero gets damaged, remove it for now. May add health later.
 		defeat();
+		return 1;
+	}
+	if(p_e->getType() == df::OUT_EVENT) {
+		// If the hero gets damaged, remove it for now. May add health later.
+		std::cout << "left the world" << std::endl;
 		return 1;
 	}
 	return 0;
@@ -76,10 +85,22 @@ void Hero::keyboard(const df::EventKeyboard* keyboard_event) {
 
 // Mouse clicks. This fires the weapon with left click
 void Hero::mouse(const df::EventMouse* mouse_event) {
-		if ((mouse_event->getMouseAction() == df::CLICKED) &&
-			(mouse_event->getMouseButton() == df::Mouse::LEFT))
-			attack(mouse_event->getMousePosition(), cur_weapon);
-
+	if ((mouse_event->getMouseAction() == df::CLICKED) && (mouse_event->getMouseButton() == df::Mouse::LEFT)) {
+		df::Vector adjusted_pos(mouse_event->getMousePosition().getX() + (80 * 0), mouse_event->getMousePosition().getY() + (24 * 1));
+		attack(adjusted_pos, cur_weapon);
+	}
+	if ((mouse_event->getMouseAction() == df::CLICKED) && (mouse_event->getMouseButton() == df::Mouse::RIGHT)) {
+		switch (cur_weapon) {
+		case SWORD:
+			cur_weapon = BOW;
+			std::cout << cur_weapon;
+			break;
+		case BOW:
+			cur_weapon = SWORD;
+			std::cout << cur_weapon;
+			break;
+		}
+	}
 }
 
 void Hero::step() {
@@ -107,6 +128,23 @@ void Hero::attack(df::Vector target, WEAPON weapon) {
 		bool direction = (target.getX() > getPosition().getX());
 		Arrow* p = new Arrow(getPosition(), direction);
 		p->setVelocity(v);
+	} 
+	else if (weapon == SWORD) {
+		//Look at all objects
+		df::ObjectList all = WM.getAllObjects();
+		df::ObjectListIterator li(&all);
+		while (!li.isDone()) {
+			//If they're within 4 distance
+			if (detectDistance(li.currentObject()) < 8 && li.currentObject()->getType() != "Hero") {
+				//Give them a damage event. This makes the sword a sweep attack. I'm fine with that.
+				EventDamage damage(1);
+				std::cout << "Found a nearby object!" << std::endl;
+				li.currentObject()->eventHandler(&damage);
+			}
+			li.next();
+			std::cout << "Stuck looking for objects!" << std::endl;
+		}
+		std::cout << "Escaped looking for objects!" << std::endl;
 	}
 }
 
@@ -125,4 +163,14 @@ void Hero::move(int dx, int dy) {
 void Hero::defeat() {
 	//Dead sprite, stuff, etc.
 	WM.markForDelete(this);
+}
+
+float Hero::detectDistance(Object *other) const{
+
+	df::Vector o_pos = other->getPosition();
+	df::Vector h_pos = getPosition();
+
+	df::Vector diff = o_pos - h_pos;
+	float distance = diff.getMagnitude();
+	return distance;
 }

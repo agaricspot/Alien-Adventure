@@ -21,6 +21,7 @@ private:
 	void attack(df::Vector pos, WEAPON weapon);
 	void step();
 	void defeat();
+	float detectDistance(Object* other) const;
 
 	int move_slowdown = 3;
 	int move_countdown = move_slowdown;
