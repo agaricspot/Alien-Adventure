@@ -16,6 +16,7 @@
 #include "Hero.h"
 #include "Reticle.h"
 #include "Enemy.h"
+#include "MapGrid.h"
 
 void loadResources();
 
@@ -37,13 +38,14 @@ int main(int argc, char* argv[]) {
 
     //Set the world size to a larger world.
     df::Box world_size = WM.getBoundary();
-    world_size.setHorizontal(400);
-    world_size.setVertical(120);
+    world_size.setHorizontal(240);
+    world_size.setVertical(72);
     WM.setBoundary(world_size);
     std::cout << "X: " << world_size.getHorizontal() << " Y: " << world_size.getVertical();
     //Set the view to the left center
-    df::Box init_view(df::Vector(0, 48), 80, 24);
+    df::Box init_view(df::Vector(0, 24), 80, 24);
     WM.setView(init_view);
+
     
     loadResources();
 
@@ -52,6 +54,9 @@ int main(int argc, char* argv[]) {
     new Reticle();
 
     new Enemy();
+
+    new MapGrid(0, 1);
+
 
     GM.run();
 
@@ -67,4 +72,5 @@ void loadResources() {
     RM.loadSprite("sprites/arrowleft-spr.txt", "arrowleft");
     RM.loadSprite("sprites/arrowright-spr.txt", "arrowright");
     RM.loadSprite("sprites/enemy-spr.txt", "enemy");
+    RM.loadSprite("sprites/spawn-level.txt", "cave");
 }

@@ -17,7 +17,7 @@ Hero::Hero() {
 	registerInterest(df::MSE_EVENT);
 	registerInterest(df::OUT_EVENT);
 	setType("Hero");
-	df::Vector p(40, 56);
+	df::Vector p(40, 36);
 	setPosition(p);
 	cur_weapon = BOW;
 }
@@ -86,7 +86,7 @@ void Hero::keyboard(const df::EventKeyboard* keyboard_event) {
 // Mouse clicks. This fires the weapon with left click
 void Hero::mouse(const df::EventMouse* mouse_event) {
 	if ((mouse_event->getMouseAction() == df::CLICKED) && (mouse_event->getMouseButton() == df::Mouse::LEFT)) {
-		df::Vector adjusted_pos(mouse_event->getMousePosition().getX() + (80 * 0), mouse_event->getMousePosition().getY() + (24 * 2));
+		df::Vector adjusted_pos(mouse_event->getMousePosition().getX() + (80 * 0), mouse_event->getMousePosition().getY() + (24 * 1));
 		attack(adjusted_pos, cur_weapon);
 	}
 	if ((mouse_event->getMouseAction() == df::CLICKED) && (mouse_event->getMouseButton() == df::Mouse::RIGHT)) {

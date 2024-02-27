@@ -30,7 +30,7 @@ int Reticle::eventHandler(const df::Event* p_e) {
 		const df::EventMouse* mouse_event = dynamic_cast <const df::EventMouse*> (p_e);
 		if (mouse_event->getMouseAction() == df::MOVED) {
 			// Change location to new mouse position.
-			df::Vector adjusted_pos(mouse_event->getMousePosition().getX() + (80 * 0), mouse_event->getMousePosition().getY() + (24 * 2));
+			df::Vector adjusted_pos(mouse_event->getMousePosition().getX() + (80 * 0), mouse_event->getMousePosition().getY() + (24 * 1));
 			setPosition(adjusted_pos);
 			//std::cout << "Mouse position: " << adjusted_pos.toString() <<std::endl;
 			return 1;
