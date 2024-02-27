@@ -1,2 +1,3 @@
-﻿  MapGrid.cpp
+﻿  Reticle.cpp
+C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\Reticle.cpp(44): warning C4715: 'Reticle::eventHandler': not all control paths return a value
   AlienAdventure.vcxproj -> C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\x64\Debug\AlienAdventure.exe

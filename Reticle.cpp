@@ -17,6 +17,8 @@ Reticle::Reticle() {
 	//Start in the middle of the screen
 	df::Vector p(40, 56);
 	setPosition(p);
+	int mapCellX = 0;
+	int mapCellY = 1;
 }
 
 //Draw the character on the screen in green.
@@ -26,14 +28,41 @@ int Reticle::draw() {
 
 //Follow the postion of the mouse across the screen.
 int Reticle::eventHandler(const df::Event* p_e) {
+	setMapCellX();
+	setMapCellY();
+	//std::cout << "Map cell: " << mapCellX << ", " << mapCellY << std::endl;
 	if (p_e->getType() == df::MSE_EVENT) {
 		const df::EventMouse* mouse_event = dynamic_cast <const df::EventMouse*> (p_e);
 		if (mouse_event->getMouseAction() == df::MOVED) {
 			// Change location to new mouse position.
-			df::Vector adjusted_pos(mouse_event->getMousePosition().getX() + (80 * 0), mouse_event->getMousePosition().getY() + (24 * 1));
+			df::Vector adjusted_pos(mouse_event->getMousePosition().getX() + (80 * mapCellX), mouse_event->getMousePosition().getY() + (24 * mapCellY));
 			setPosition(adjusted_pos);
 			//std::cout << "Mouse position: " << adjusted_pos.toString() <<std::endl;
 			return 1;
 		}
+	}
+}
+
+void Reticle::setMapCellX() {
+	if (getPosition().getX() <= 80 && getPosition().getX() >= 0) {
+		mapCellX = 0;
+	}
+	else if (getPosition().getX() <= 160 && getPosition().getX() >= 81) {
+		mapCellX = 1;
+	}
+	else if (getPosition().getX() <= 240 && getPosition().getX() >= 161) {
+		mapCellX = 2;
+	}
+}
+
+void Reticle::setMapCellY() {
+	if (getPosition().getY() <= 24 && getPosition().getY() >= 0) {
+		mapCellY = 0;
+	}
+	else if (getPosition().getY() <= 48 && getPosition().getY() >= 25) {
+		mapCellY = 1;
+	}
+	else if (getPosition().getY() <= 72 && getPosition().getY() >= 49) {
+		mapCellY = 2;
 	}
 }

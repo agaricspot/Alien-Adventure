@@ -20,6 +20,8 @@ Hero::Hero() {
 	df::Vector p(40, 36);
 	setPosition(p);
 	cur_weapon = BOW;
+	mapCellX = 0;
+	mapCellY = 1;
 }
 
 Hero::~Hero() { //do nothing for now
@@ -85,8 +87,11 @@ void Hero::keyboard(const df::EventKeyboard* keyboard_event) {
 
 // Mouse clicks. This fires the weapon with left click
 void Hero::mouse(const df::EventMouse* mouse_event) {
+	setMapCellX();
+	setMapCellY();
+	std::cout << "Map cell: " << mapCellX << ", " << mapCellY << std::endl;
 	if ((mouse_event->getMouseAction() == df::CLICKED) && (mouse_event->getMouseButton() == df::Mouse::LEFT)) {
-		df::Vector adjusted_pos(mouse_event->getMousePosition().getX() + (80 * 0), mouse_event->getMousePosition().getY() + (24 * 1));
+		df::Vector adjusted_pos(mouse_event->getMousePosition().getX() + (80 * mapCellX), mouse_event->getMousePosition().getY() + (24 * mapCellY));
 		attack(adjusted_pos, cur_weapon);
 	}
 	if ((mouse_event->getMouseAction() == df::CLICKED) && (mouse_event->getMouseButton() == df::Mouse::RIGHT)) {
@@ -173,4 +178,26 @@ float Hero::detectDistance(Object *other) const{
 	df::Vector diff = o_pos - h_pos;
 	float distance = diff.getMagnitude();
 	return distance;
+}
+
+void Hero::setMapCellX()  {
+	if (getPosition().getX() <= 80 && getPosition().getX() >= 0) {
+		mapCellX = 0;
+	} else if (getPosition().getX() <= 160 && getPosition().getX() >= 81) {
+		mapCellX = 1;
+	} else if (getPosition().getX() <= 240 && getPosition().getX() >= 161) {
+		mapCellX = 2;
+	}
+}
+
+void Hero::setMapCellY()  {
+	if (getPosition().getY() <= 24 && getPosition().getY() >= 0) {
+		mapCellY = 0;
+	}
+	else if (getPosition().getY() <= 48 && getPosition().getY() >= 25) {
+		mapCellY = 1;
+	}
+	else if (getPosition().getY() <= 72 && getPosition().getY() >= 49) {
+		mapCellY = 2;
+	}
 }

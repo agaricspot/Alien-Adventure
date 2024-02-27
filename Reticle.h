@@ -4,6 +4,12 @@
 #define RETICLE_CHAR '+'
 
 class Reticle : public df::Object {
+private:
+	void setMapCellX();
+	void setMapCellY();
+
+	int mapCellX;
+	int mapCellY;
 
 public:
 	Reticle();
