@@ -50,7 +50,7 @@ int Enemy::eventHandler(const df::Event* p_e) {
 		if (detectDistance() < 0) {
 			return -1;
 		}
-		if(detectDistance() < 2)
+		if(detectDistance() < 5)
 			attack();
 		return 1;
 	}

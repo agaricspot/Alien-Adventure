@@ -22,5 +22,11 @@ int MapManager::getCellY() const {
 
 //set the hero cells
 void MapManager::setCellXY(int x, int y) {
+	hero_cell_X = x;
+	hero_cell_Y = y;
+}
+
+//Create the world
+void MapManager::createWorld() {
 
 }

@@ -142,7 +142,7 @@ void Hero::attack(df::Vector target, WEAPON weapon) {
 		df::ObjectListIterator li(&all);
 		while (!li.isDone()) {
 			//If they're within 4 distance
-			if (detectDistance(li.currentObject()) < 8 && li.currentObject()->getType() != "Hero") {
+			if (detectDistance(li.currentObject()) < 10 && li.currentObject()->getType() != "Hero") {
 				//Give them a damage event. This makes the sword a sweep attack. I'm fine with that.
 				EventDamage damage(1);
 				li.currentObject()->eventHandler(&damage);

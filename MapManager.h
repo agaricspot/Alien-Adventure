@@ -24,5 +24,8 @@ public:
 
 	//set the hero cells
 	void setCellXY(int x, int y);
+	
+	//Create the 9 cells and set their sprites/collision boxes.
+	void createWorld();
 };
 
