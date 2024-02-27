@@ -1,0 +1,32 @@
+<HEADER>
+frames 1
+width 21
+height 24
+color white
+slowdown 0
+</HEADER>
+<BODY>
+____________________    
+                   /|   
+                  / |   
+                 /  |   
+                /   |   
+               /    |   
+              /     |   
+             /  /|  |   
+___________ /  /*|  |   
+           |  |**| /I   
+           |  |**|/ I   
+           |  |**/\_I_  
+           |  |*/ / /\__
+           |  |/ / / / /
+           |  /\/_/ / / 
+           | /    \/_/  
+___________|/           
+           I            
+          _I_           
+end      
+</BODY>
+<FOOTER>
+version 1
+</FOOTER>
