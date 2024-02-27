@@ -1,6 +1,7 @@
 #include "Hero.h"
 #include "Arrow.h"
 #include "EventDamage.h"
+#include "MapManager.h"
 
 #include "WorldManager.h"
 #include "EventStep.h"
@@ -11,7 +12,7 @@
 
 
 Hero::Hero() {
-	setSprite("hero");
+	setSprite("herosword");
 	registerInterest(df::KEYBOARD_EVENT);
 	registerInterest(df::STEP_EVENT);
 	registerInterest(df::MSE_EVENT);
@@ -19,9 +20,8 @@ Hero::Hero() {
 	setType("Hero");
 	df::Vector p(40, 36);
 	setPosition(p);
-	cur_weapon = BOW;
-	mapCellX = 0;
-	mapCellY = 1;
+	cur_weapon = SWORD;
+	MM.setCellXY(0, 1);
 }
 
 Hero::~Hero() { //do nothing for now
@@ -89,19 +89,21 @@ void Hero::keyboard(const df::EventKeyboard* keyboard_event) {
 void Hero::mouse(const df::EventMouse* mouse_event) {
 	setMapCellX();
 	setMapCellY();
-	std::cout << "Map cell: " << mapCellX << ", " << mapCellY << std::endl;
+	//std::cout << "Map cell: " << MM.getCellX() << ", " << MM.getCellY() << std::endl;
 	if ((mouse_event->getMouseAction() == df::CLICKED) && (mouse_event->getMouseButton() == df::Mouse::LEFT)) {
-		df::Vector adjusted_pos(mouse_event->getMousePosition().getX() + (80 * mapCellX), mouse_event->getMousePosition().getY() + (24 * mapCellY));
+		df::Vector adjusted_pos(mouse_event->getMousePosition().getX() + (80 * MM.getCellX()), mouse_event->getMousePosition().getY() + (24 * MM.getCellY()));
 		attack(adjusted_pos, cur_weapon);
 	}
 	if ((mouse_event->getMouseAction() == df::CLICKED) && (mouse_event->getMouseButton() == df::Mouse::RIGHT)) {
 		switch (cur_weapon) {
 		case SWORD:
 			cur_weapon = BOW;
+			setSprite("herobow");
 			std::cout << cur_weapon;
 			break;
 		case BOW:
 			cur_weapon = SWORD;
+			setSprite("herosword");
 			std::cout << cur_weapon;
 			break;
 		}
@@ -143,13 +145,10 @@ void Hero::attack(df::Vector target, WEAPON weapon) {
 			if (detectDistance(li.currentObject()) < 8 && li.currentObject()->getType() != "Hero") {
 				//Give them a damage event. This makes the sword a sweep attack. I'm fine with that.
 				EventDamage damage(1);
-				std::cout << "Found a nearby object!" << std::endl;
 				li.currentObject()->eventHandler(&damage);
 			}
 			li.next();
-			std::cout << "Stuck looking for objects!" << std::endl;
 		}
-		std::cout << "Escaped looking for objects!" << std::endl;
 	}
 }
 
@@ -182,22 +181,24 @@ float Hero::detectDistance(Object *other) const{
 
 void Hero::setMapCellX()  {
 	if (getPosition().getX() <= 80 && getPosition().getX() >= 0) {
-		mapCellX = 0;
-	} else if (getPosition().getX() <= 160 && getPosition().getX() >= 81) {
-		mapCellX = 1;
-	} else if (getPosition().getX() <= 240 && getPosition().getX() >= 161) {
-		mapCellX = 2;
+		MM.setCellXY(0, MM.getCellY());
+	}
+	else if (getPosition().getX() <= 160 && getPosition().getX() >= 81) {
+		MM.setCellXY(1, MM.getCellY());
+	}
+	else if (getPosition().getX() <= 240 && getPosition().getX() >= 161) {
+		MM.setCellXY(2, MM.getCellY());
 	}
 }
 
 void Hero::setMapCellY()  {
 	if (getPosition().getY() <= 24 && getPosition().getY() >= 0) {
-		mapCellY = 0;
+		MM.setCellXY(MM.getCellX(), 0);
 	}
 	else if (getPosition().getY() <= 48 && getPosition().getY() >= 25) {
-		mapCellY = 1;
+		MM.setCellXY(MM.getCellX(), 1);
 	}
 	else if (getPosition().getY() <= 72 && getPosition().getY() >= 49) {
-		mapCellY = 2;
+		MM.setCellXY(MM.getCellX(), 2);
 	}
 }

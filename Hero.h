@@ -25,9 +25,6 @@ private:
 	void setMapCellX();
 	void setMapCellY();
 
-	int mapCellX;
-	int mapCellY;
-
 	int move_slowdown = 3;
 	int move_countdown = move_slowdown;
 

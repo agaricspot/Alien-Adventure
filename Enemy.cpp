@@ -12,7 +12,7 @@
 Enemy::Enemy() {
 	setType("Enemy");
 	registerInterest(df::STEP_EVENT);
-	setSprite("enemy");
+	setSprite("goopling");
 	setPosition(df::Vector(0, 48));
 	setSpeed(0.15);
 }

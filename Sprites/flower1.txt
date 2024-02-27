@@ -9,7 +9,7 @@ slowdown 0
  ,,, 
 ={+}=
 (\|  
-  |/) 
+  |/)
 end
 </BODY>
 <FOOTER>
