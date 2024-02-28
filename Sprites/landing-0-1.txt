@@ -1,0 +1,37 @@
+<HEADER>
+frames 1
+width 80
+height 24
+color white
+slowdown 6
+</HEADER>
+<BODY>
+                  ______/                                    \                  
+     ____________/                                            \___________     X2
+    /                                                                     \_____     
+___/                                                                           X4
+                                                                                
+                                                                               X6
+                                                                                
+                                                                               X8
+                                                                                
+                                                                               X10 
+                                                                                
+                                                                               X12
+                                                                                
+                                                                               X14
+                                                                                
+                                                                               X16
+                                                                                
+                                                                               X18
+                                                                                
+                                                                               X20
+                                                                                
+___                                                                            X22
+   \                                                                            
+    \                                                                          X24
+end
+</BODY>
+<FOOTER>
+version 1
+</FOOTER>

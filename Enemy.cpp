@@ -88,5 +88,4 @@ int Enemy::attack() {
 	EventDamage d(1);
 	hero->eventHandler(&d);
 	return d.getDamage();
-
 }

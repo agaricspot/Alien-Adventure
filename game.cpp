@@ -55,7 +55,9 @@ int main(int argc, char* argv[]) {
 
     new Enemy();
 
-    new MapGrid(0, 1);
+    new MapGrid(0, 0, 0);
+
+    new MapGrid(0, 1, 3);
 
 
     GM.run();
@@ -67,22 +69,23 @@ int main(int argc, char* argv[]) {
 }
 
 void loadResources() {
-    //This will load sprites once I have them.
-    //Test sprite from saucer shoot. This works
-    RM.loadSprite("sprites/saucer-spr.txt", "saucer");
 
-    //These don't work
-    std::cout << RM.loadSprite("sprites/flower1.txt", "flower") << std::endl;
+    //Hero Sprites
     RM.loadSprite("sprites/hero_bow.txt", "herobow");
     RM.loadSprite("sprites/hero_sword.txt", "herosword");
+
+    //Enemy Sprites
+    //RM.loadSprite("sprites/chomper.txt", "chomper");
     RM.loadSprite("sprites/goopling.txt", "goopling");
 
-    //These work
+    //Misc Sprites
     RM.loadSprite("sprites/arrowleft.txt", "arrowleft");
     RM.loadSprite("sprites/arrowright.txt", "arrowright");
     
+    //Environment Sprites
+    RM.loadSprite("sprites/flower1.txt", "flower");
 
     //Not needed right now
-    //RM.loadSprite("sprites/chomper.txt", "chomper");
-    RM.loadSprite("sprites/spawn-level.txt", "cave");
+    RM.loadSprite("sprites/landing-0-1.txt", "landing");
+    RM.loadSprite("sprites/cave-0-0.txt", "cave");
 }
