@@ -2,7 +2,7 @@
 frames 1
 width 13
 height 4
-color purple
+color cyan
 slowdown 0
 </HEADER>
 <BODY>
