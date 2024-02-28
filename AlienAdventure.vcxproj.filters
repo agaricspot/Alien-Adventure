@@ -36,6 +36,12 @@
     <ClCompile Include="Goopling.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MapGrid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MapManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Hero.h">
@@ -54,6 +60,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Goopling.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MapGrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MapManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

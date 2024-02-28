@@ -1,11 +1,18 @@
-13:52:10    0 ****************************************************
-13:52:10    0 ** Dragonfly version 4.19 **
-13:52:10    0 ** Game engine started **
-13:52:10    0 ****************************************************
-13:52:11   15 GameManager::run(): Can't keep up! frame_time 33 ms, split 39 ms
-13:52:11   21 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
-13:52:11   22 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
-13:52:13   90 RM::loadSprite(): Loading sprite 'sprites/hero-spr.txt'.
-13:52:13   90 RM::loadSprite(): Loading sprite 'sprites/arrowleft-spr.txt'.
-13:52:13   90 RM::loadSprite(): Loading sprite 'sprites/arrowright-spr.txt'.
-13:52:13   90 RM::loadSprite(): Loading sprite 'sprites/enemy-spr.txt'.
+19:07:19    0 ****************************************************
+19:07:19    0 ** Dragonfly version 4.19 **
+19:07:19    0 ** Game engine started **
+19:07:19    0 ****************************************************
+19:07:22   90 RM::loadSprite(): Loading sprite 'sprites/hero_bow.txt'.
+19:07:22   90 RM::loadSprite(): Loading sprite 'sprites/hero_sword.txt'.
+19:07:22   90 RM::loadSprite(): Loading sprite 'sprites/goopling.txt'.
+19:07:22   90 RM::loadSprite(): Loading sprite 'sprites/arrowleft.txt'.
+19:07:22   90 RM::loadSprite(): Loading sprite 'sprites/arrowright.txt'.
+19:07:22   90 RM::loadSprite(): Loading sprite 'sprites/flower1.txt'.
+19:07:22   90 RM::loadSprite(): Loading sprite 'sprites/landing-0-1.txt'.
+19:07:22   90 RM::loadSprite(): Loading sprite 'sprites/cave-0-0.txt'.
+19:07:22   90 WorldManager::isValid(): Event df-out handled automatically.
+19:07:22   90 Manager(WorldManager)::registerInterest(): Event 'df-out' not valid for this Manager
+19:07:25   84 WorldManager::isValid(): Event df-out handled automatically.
+19:07:25   84 Manager(WorldManager)::registerInterest(): Event 'df-out' not valid for this Manager
+19:07:25   84 WorldManager::isValid(): Event df-collision handled automatically.
+19:07:25   84 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager

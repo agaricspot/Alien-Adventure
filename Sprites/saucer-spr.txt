@@ -1,26 +1,25 @@
 <HEADER>
-frames 4
+frames 5
 width 6
-height 3
-color blue
-slowdown 6
+height 2
+color green
+slowdown 4
 </HEADER>
 <BODY>
  ____ 
-/.oo.\
- |||| 
+/____\
 end
  ____ 
-/.oo.\
- ||\\ 
+/___o\
 end
  ____ 
-/.--.\
- //\\ 
+/__o_\
 end
  ____ 
-/.--.\
- //|| 
+/_o__\
+end
+ ____ 
+/o___\
 end
 </BODY>
 <FOOTER>
