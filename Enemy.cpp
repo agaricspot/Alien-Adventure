@@ -12,7 +12,7 @@
 Enemy::Enemy() {
 	setType("Enemy");
 	registerInterest(df::STEP_EVENT);
-	setSprite("enemy");
+	setSprite("goopling");
 	setPosition(df::Vector(0, 48));
 	setSpeed(0.15);
 }
@@ -50,7 +50,7 @@ int Enemy::eventHandler(const df::Event* p_e) {
 		if (detectDistance() < 0) {
 			return -1;
 		}
-		if(detectDistance() < 2)
+		if(detectDistance() < 5)
 			attack();
 		return 1;
 	}
@@ -88,5 +88,4 @@ int Enemy::attack() {
 	EventDamage d(1);
 	hero->eventHandler(&d);
 	return d.getDamage();
-
 }

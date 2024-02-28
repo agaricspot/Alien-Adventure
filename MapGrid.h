@@ -9,7 +9,7 @@ private:
 
 public:
 	//Make a grid, set to spectral, and set the sprite.
-	MapGrid(int x, int y);
+	MapGrid(int x, int y, int num);
 
 	//Set the location of the map cell
 	void setCoord(int x, int y);

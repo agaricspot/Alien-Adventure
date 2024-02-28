@@ -22,6 +22,8 @@ private:
 	void step();
 	void defeat();
 	float detectDistance(Object* other) const;
+	void setMapCellX();
+	void setMapCellY();
 
 	int move_slowdown = 3;
 	int move_countdown = move_slowdown;

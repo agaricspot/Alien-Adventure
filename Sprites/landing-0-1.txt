@@ -1,0 +1,37 @@
+<HEADER>
+frames 1
+width 80
+height 24
+color white
+slowdown 6
+</HEADER>
+<BODY>
+                  ______/                                    \                  
+     ____________/                                            \___________     X
+    /                                                                     \_____
+___/                                                                           X
+                                                                                
+                                                                               X
+                                                                                
+                                                                               X
+                                                                                
+                                                                               X
+                                                                                
+                                                                               X
+                                                                                
+                                                                               X
+                                                                                
+                                                                               X
+                                                                                
+                                                                               X
+                                                                                
+                                                                               X
+                                                                                
+___                                                                            X
+   \                                                                            
+    \                                                                          X
+end
+</BODY>
+<FOOTER>
+version 1
+</FOOTER>

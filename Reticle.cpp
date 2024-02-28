@@ -3,6 +3,7 @@
 #include "EventMouse.h"
 #include "DisplayManager.h"
 #include "WorldManager.h"
+#include "MapManager.h"
 
 #include <iostream>
 
@@ -17,6 +18,8 @@ Reticle::Reticle() {
 	//Start in the middle of the screen
 	df::Vector p(40, 56);
 	setPosition(p);
+	int mapCellX = 0;
+	int mapCellY = 1;
 }
 
 //Draw the character on the screen in green.
@@ -30,7 +33,7 @@ int Reticle::eventHandler(const df::Event* p_e) {
 		const df::EventMouse* mouse_event = dynamic_cast <const df::EventMouse*> (p_e);
 		if (mouse_event->getMouseAction() == df::MOVED) {
 			// Change location to new mouse position.
-			df::Vector adjusted_pos(mouse_event->getMousePosition().getX() + (80 * 0), mouse_event->getMousePosition().getY() + (24 * 1));
+			df::Vector adjusted_pos(mouse_event->getMousePosition().getX() + (80 * MM.getCellX()), mouse_event->getMousePosition().getY() + (24 * MM.getCellY()));
 			setPosition(adjusted_pos);
 			//std::cout << "Mouse position: " << adjusted_pos.toString() <<std::endl;
 			return 1;

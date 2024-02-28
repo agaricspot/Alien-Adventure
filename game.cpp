@@ -41,7 +41,7 @@ int main(int argc, char* argv[]) {
     world_size.setHorizontal(240);
     world_size.setVertical(72);
     WM.setBoundary(world_size);
-    std::cout << "X: " << world_size.getHorizontal() << " Y: " << world_size.getVertical();
+    std::cout << "X: " << world_size.getHorizontal() << " Y: " << world_size.getVertical() << std::endl;
     //Set the view to the left center
     df::Box init_view(df::Vector(0, 24), 80, 24);
     WM.setView(init_view);
@@ -55,7 +55,9 @@ int main(int argc, char* argv[]) {
 
     new Enemy();
 
-    new MapGrid(0, 1);
+    new MapGrid(0, 0, 0);
+
+    new MapGrid(0, 1, 3);
 
 
     GM.run();
@@ -67,10 +69,23 @@ int main(int argc, char* argv[]) {
 }
 
 void loadResources() {
-    //This will load sprites once I have them.
-    RM.loadSprite("sprites/hero-spr.txt", "hero");
-    RM.loadSprite("sprites/arrowleft-spr.txt", "arrowleft");
-    RM.loadSprite("sprites/arrowright-spr.txt", "arrowright");
-    RM.loadSprite("sprites/enemy-spr.txt", "enemy");
-    RM.loadSprite("sprites/spawn-level.txt", "cave");
+
+    //Hero Sprites
+    RM.loadSprite("sprites/hero_bow.txt", "herobow");
+    RM.loadSprite("sprites/hero_sword.txt", "herosword");
+
+    //Enemy Sprites
+    //RM.loadSprite("sprites/chomper.txt", "chomper");
+    RM.loadSprite("sprites/goopling.txt", "goopling");
+
+    //Misc Sprites
+    RM.loadSprite("sprites/arrowleft.txt", "arrowleft");
+    RM.loadSprite("sprites/arrowright.txt", "arrowright");
+    
+    //Environment Sprites
+    RM.loadSprite("sprites/flower1.txt", "flower");
+
+    //Not needed right now
+    RM.loadSprite("sprites/landing-0-1.txt", "landing");
+    RM.loadSprite("sprites/cave-0-0.txt", "cave");
 }
