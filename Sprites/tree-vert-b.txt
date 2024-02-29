@@ -1,0 +1,21 @@
+<HEADER>
+frames 1
+width
+height 8
+color white
+slowdown 3
+</HEADER>
+<BODY>
+       o  /---o
+__| \/  \/ o   
+  \_/ o / /--- 
+ o--\_||_/_o   
+      ||__     
+    \_||              
+  _._/||\_,,_  
+    _/ \__._  
+end
+</BODY>
+<FOOTER>
+version 1
+</FOOTER>
