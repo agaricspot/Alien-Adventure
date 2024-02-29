@@ -1,0 +1,32 @@
+<HEADER>
+frames 4
+width 8
+height 4
+color green
+slowdown 3
+</HEADER>
+<BODY>
+    ___ 
+ / |'-'|
+=|=/[Y]\
+ \  | | 
+end
+    ___ 
+ / |'-'|
+=|=/[Y]\
+ \  | \ 
+end
+    ___ 
+ / |'-'|
+=|=/[Y]\
+ \  / \ 
+end
+    ___ 
+ / |'-'|
+=|=/[Y]\
+ \  / | 
+end
+</BODY>
+<FOOTER>
+version 1
+</FOOTER>

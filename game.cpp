@@ -69,8 +69,11 @@ int main(int argc, char* argv[]) {
 void loadResources() {
 
     //Hero Sprites
-    RM.loadSprite("sprites/hero_bow.txt", "herobow");
-    RM.loadSprite("sprites/hero_sword.txt", "herosword");
+    RM.loadSprite("sprites/hero_bow.txt", "herobowr");
+    RM.loadSprite("sprites/hero_sword.txt", "heroswordr");
+    RM.loadSprite("sprites/hero_bow_left.txt", "herobowl");
+    RM.loadSprite("sprites/hero_sword_left.txt", "heroswordl");
+
 
     //Enemy Sprites
     RM.loadSprite("sprites/chomper.txt", "chomper");
