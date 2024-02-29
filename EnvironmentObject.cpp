@@ -33,9 +33,9 @@ EnvironmentObject* EnvironmentObject::makeSpaceship(std::string type) {
 }
 
 //Make a rock. Value for size in input
-EnvironmentObject* EnvironmentObject::makeRock(std::string type, df::Vector pos, int size) {
+EnvironmentObject* EnvironmentObject::makeRock(std::string type, df::Vector pos, std::string sprite) {
 	EnvironmentObject* eo = new EnvironmentObject(type, pos);
 	eo->setSolidness(df::HARD);
-	eo->setSprite("bigrock");
+	eo->setSprite(sprite);
 	return eo;
 }

@@ -17,6 +17,6 @@ public:
 	static EnvironmentObject* makeSpaceship(std::string type);
 
 	//Make a rock. Value for size in input
-	static EnvironmentObject* makeRock(std::string type, df::Vector pos, int size);
+	static EnvironmentObject* makeRock(std::string type, df::Vector pos, std::string sprite);
 };
 

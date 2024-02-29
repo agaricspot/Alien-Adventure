@@ -86,10 +86,13 @@ void loadResources() {
     //Environment Sprites
     RM.loadSprite("sprites/flower1.txt", "flower");
     RM.loadSprite("sprites/flower2.txt", "flower2");
-    RM.loadSprite("sprites/space_station.txt", "door");
     RM.loadSprite("sprites/mushroom.txt", "mushroom");
+
     RM.loadSprite("sprites/rock_big.txt", "bigrock");
     RM.loadSprite("sprites/rock_small.txt", "smallrock");
+    RM.loadSprite("sprites/rock-b1.txt", "hwall1");
+    RM.loadSprite("sprites/rock-b2.txt", "hwall2");
+
     RM.loadSprite("sprites/tree.txt", "tree");
     RM.loadSprite("sprites/tree-1.txt", "tree1");
     RM.loadSprite("sprites/tree-dense.txt", "treedense");
@@ -97,4 +100,5 @@ void loadResources() {
     RM.loadSprite("sprites/misc-grass-2.txt", "grass2");
     RM.loadSprite("sprites/misc-grass-3.txt", "grass3");
 
+    RM.loadSprite("sprites/space_station.txt", "door");
 }

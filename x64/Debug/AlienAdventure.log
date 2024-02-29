@@ -1,2 +1,4 @@
 ﻿  MapManager.cpp
+C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\MapManager.cpp(82,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\MapManager.cpp(85,53): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   AlienAdventure.vcxproj -> C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\x64\Debug\AlienAdventure.exe

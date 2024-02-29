@@ -74,5 +74,19 @@ void MapManager::createWorld() {
 
 	EnvironmentObject::makeSpaceship("Wall");
 	
-	EnvironmentObject::makeRock("Wall", df::Vector(78, 22), 1);
+	EnvironmentObject::makeRock("Wall", df::Vector(78, 22), "bigrock");
+
+	//0-0 top wall
+	for (int i = 0; i < 10; i++) {
+		if (i % 2 == 0) {
+			EnvironmentObject::makeRock("Wall", df::Vector((9 * i), 0), "hwall1");
+			continue;
+		}
+		EnvironmentObject::makeRock("Wall", df::Vector((9 * i), 1), "hwall2");
+	}
+
+	// TODO : add map walls
+	// TODO : add flowers/grass
+	// TODO : add random rocks
+	// TODO : add mushroom powerups
 }
