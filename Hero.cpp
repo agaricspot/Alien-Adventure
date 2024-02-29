@@ -115,23 +115,11 @@ void Hero::mouse(const df::EventMouse* mouse_event) {
 		switch (cur_weapon) {
 		case SWORD:
 			cur_weapon = BOW;
-<<<<<<< Updated upstream
-			setSprite("herobow");
-			//std::cout << cur_weapon;
-			break;
-		case BOW:
-			cur_weapon = SWORD;
-			setSprite("herosword");
-			//std::cout << cur_weapon;
-=======
 			setSprite("herobowr");
-			std::cout << cur_weapon;
 			break;
 		case BOW:
 			cur_weapon = SWORD;
 			setSprite("heroswordr");
-			std::cout << cur_weapon;
->>>>>>> Stashed changes
 			break;
 		}
 	}

@@ -78,18 +78,23 @@ void loadResources() {
     //Enemy Sprites
     RM.loadSprite("sprites/chomper.txt", "chomper");
     RM.loadSprite("sprites/goopling.txt", "goopling");
-    
+
     //Misc Sprites
     RM.loadSprite("sprites/arrowleft.txt", "arrowleft");
     RM.loadSprite("sprites/arrowright.txt", "arrowright");
-    
+
     //Environment Sprites
     RM.loadSprite("sprites/flower1.txt", "flower");
     RM.loadSprite("sprites/flower2.txt", "flower2");
     RM.loadSprite("sprites/space_station.txt", "door");
-    RM.loadSprite("spretes/mushroom.txt", "mushroom");
+    RM.loadSprite("sprites/mushroom.txt", "mushroom");
+    RM.loadSprite("sprites/rock_big.txt", "bigrock");
+    RM.loadSprite("sprites/rock_small.txt", "smallrock");
+    RM.loadSprite("sprites/tree.txt", "tree");
+    RM.loadSprite("sprites/tree-1.txt", "tree1");
+    RM.loadSprite("sprites/tree-dense.txt", "treedense");
+    RM.loadSprite("sprites/misc-grass-1.txt", "grass1");
+    RM.loadSprite("sprites/misc-grass-2.txt", "grass2");
+    RM.loadSprite("sprites/misc-grass-3.txt", "grass3");
 
-    //Not needed right now
-    RM.loadSprite("sprites/landing-0-1.txt", "landing");
-    RM.loadSprite("sprites/cave-0-0.txt", "cave");
 }

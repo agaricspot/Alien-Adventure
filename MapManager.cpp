@@ -4,6 +4,8 @@
 #include "WorldManager.h"
 #include "DisplayManager.h"
 
+#include <iostream>
+
 MapManager::MapManager() {
 	hero_cell_X = 0;
 	hero_cell_Y = 1;
@@ -69,25 +71,8 @@ void MapManager::setCellXY(int x, int y) {
 //Create the world
 void MapManager::createWorld() {
 	//Place all the map sprites and name them
-	grid00 = new MapGrid(0, 0, 0);
 
-	grid10 = new MapGrid(1, 0, 1);
-
-	grid20 = new MapGrid(2, 0, 2);
-
-	grid01 = new MapGrid(0, 1, 3);
-
-	grid11 = new MapGrid(1, 1, 4);
-
-	grid21 = new MapGrid(2, 1, 5);
-
-	grid02 = new MapGrid(0, 2, 6);
-
-	grid12 = new MapGrid(1, 2, 7);
-
-	grid22 = new MapGrid(2, 2, 8);
-
-	EnvironmentObject::makeSpaceship("Door");
-
-	new df::Box(df::Vector(0, 18), 25, 9);
+	EnvironmentObject::makeSpaceship("Wall");
+	
+	EnvironmentObject::makeRock("Wall", df::Vector(78, 22), 1);
 }

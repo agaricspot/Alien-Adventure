@@ -6,17 +6,17 @@ color magenta
 slowdown 8
 </HEADER>
 <BODY>
-  ____ 
- /____\
-   ||  
+  ____  
+ /____\ 
+   ||   
 end
   ____ +
 +/____\ 
    ||+  
 end
-+ ____ 
- /____\+ 
-   ||  
++ ____  
+ /____\+
+   ||   
 end
 </BODY>
 <FOOTER>
