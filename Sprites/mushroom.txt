@@ -2,7 +2,7 @@
 frames 3
 width 8
 height 3
-color orange
+color magenta
 slowdown 8
 </HEADER>
 <BODY>
