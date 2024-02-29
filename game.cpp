@@ -17,6 +17,7 @@
 #include "Reticle.h"
 #include "Enemy.h"
 #include "MapGrid.h"
+#include "MapManager.h"
 
 void loadResources();
 
@@ -55,10 +56,7 @@ int main(int argc, char* argv[]) {
 
     new Enemy();
 
-    new MapGrid(0, 0, 0);
-
-    new MapGrid(0, 1, 3);
-
+    MM.createWorld();
 
     GM.run();
 
@@ -75,15 +73,18 @@ void loadResources() {
     RM.loadSprite("sprites/hero_sword.txt", "herosword");
 
     //Enemy Sprites
-    //RM.loadSprite("sprites/chomper.txt", "chomper");
+    RM.loadSprite("sprites/chomper.txt", "chomper");
     RM.loadSprite("sprites/goopling.txt", "goopling");
-
+    
     //Misc Sprites
     RM.loadSprite("sprites/arrowleft.txt", "arrowleft");
     RM.loadSprite("sprites/arrowright.txt", "arrowright");
     
     //Environment Sprites
     RM.loadSprite("sprites/flower1.txt", "flower");
+    RM.loadSprite("sprites/flower2.txt", "flower2");
+    RM.loadSprite("sprites/space_station.txt", "door");
+    RM.loadSprite("spretes/mushroom.txt", "mushroom");
 
     //Not needed right now
     RM.loadSprite("sprites/landing-0-1.txt", "landing");

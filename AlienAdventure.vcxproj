@@ -145,6 +145,7 @@
   <ItemGroup>
     <ClCompile Include="Arrow.cpp" />
     <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="EnvironmentObject.cpp" />
     <ClCompile Include="EventDamage.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="Goopling.cpp" />
@@ -156,6 +157,7 @@
   <ItemGroup>
     <ClInclude Include="Arrow.h" />
     <ClInclude Include="Enemy.h" />
+    <ClInclude Include="EnvironmentObject.h" />
     <ClInclude Include="EventDamage.h" />
     <ClInclude Include="Goopling.h" />
     <ClInclude Include="Hero.h" />

@@ -83,12 +83,12 @@ void Hero::keyboard(const df::EventKeyboard* keyboard_event) {
 		}
 		break;
 	}
+	setMapCellX();
+	setMapCellY();
 }
 
 // Mouse clicks. This fires the weapon with left click
 void Hero::mouse(const df::EventMouse* mouse_event) {
-	setMapCellX();
-	setMapCellY();
 	//std::cout << "Map cell: " << MM.getCellX() << ", " << MM.getCellY() << std::endl;
 	if ((mouse_event->getMouseAction() == df::CLICKED) && (mouse_event->getMouseButton() == df::Mouse::LEFT)) {
 		df::Vector adjusted_pos(mouse_event->getMousePosition().getX() + (80 * MM.getCellX()), mouse_event->getMousePosition().getY() + (24 * MM.getCellY()));
@@ -99,12 +99,12 @@ void Hero::mouse(const df::EventMouse* mouse_event) {
 		case SWORD:
 			cur_weapon = BOW;
 			setSprite("herobow");
-			std::cout << cur_weapon;
+			//std::cout << cur_weapon;
 			break;
 		case BOW:
 			cur_weapon = SWORD;
 			setSprite("herosword");
-			std::cout << cur_weapon;
+			//std::cout << cur_weapon;
 			break;
 		}
 	}
