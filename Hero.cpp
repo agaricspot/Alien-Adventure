@@ -12,7 +12,7 @@
 
 
 Hero::Hero() {
-	setSprite("herosword");
+	setSprite("heroswordr");
 	registerInterest(df::KEYBOARD_EVENT);
 	registerInterest(df::STEP_EVENT);
 	registerInterest(df::MSE_EVENT);
@@ -65,30 +65,47 @@ int Hero::eventHandler(const df::Event* p_e) {
 // Movement via keyboard.
 void Hero::keyboard(const df::EventKeyboard* keyboard_event) {
 	switch (keyboard_event->getKey()) {
-	case df::Keyboard::W:    // up
+	case df::Keyboard::W:    // Up
 		if (keyboard_event->getKeyboardAction() == df::KEY_DOWN)
 			move(0, -1);
 		break;
-	case df::Keyboard::S:    // down
+	case df::Keyboard::S:    // Down
 		if (keyboard_event->getKeyboardAction() == df::KEY_DOWN)
 			move(0, 1);
 		break;
 	case df::Keyboard::A:    // Left
-		if (keyboard_event->getKeyboardAction() == df::KEY_DOWN)
+		if (keyboard_event->getKeyboardAction() == df::KEY_DOWN) {
 			move(-2, 0);
+			switch (cur_weapon) {
+			case BOW:
+				setSprite("herobowl");
+				break;
+			case SWORD:
+				setSprite("heroswordl");
+				break;
+			}
+		}
 		break;
-	case df::Keyboard::D:
+	case df::Keyboard::D:    // Right
 		if (keyboard_event->getKeyboardAction() == df::KEY_DOWN) {
 			move(2, 0);
+			switch (cur_weapon) {
+			case BOW:
+				setSprite("herobowr");
+				break;
+			case SWORD:
+				setSprite("heroswordr");
+				break;
+			}
 		}
 		break;
 	}
+	setMapCellX();
+	setMapCellY();
 }
 
 // Mouse clicks. This fires the weapon with left click
 void Hero::mouse(const df::EventMouse* mouse_event) {
-	setMapCellX();
-	setMapCellY();
 	//std::cout << "Map cell: " << MM.getCellX() << ", " << MM.getCellY() << std::endl;
 	if ((mouse_event->getMouseAction() == df::CLICKED) && (mouse_event->getMouseButton() == df::Mouse::LEFT)) {
 		df::Vector adjusted_pos(mouse_event->getMousePosition().getX() + (80 * MM.getCellX()), mouse_event->getMousePosition().getY() + (24 * MM.getCellY()));
@@ -98,13 +115,23 @@ void Hero::mouse(const df::EventMouse* mouse_event) {
 		switch (cur_weapon) {
 		case SWORD:
 			cur_weapon = BOW;
+<<<<<<< Updated upstream
 			setSprite("herobow");
-			std::cout << cur_weapon;
+			//std::cout << cur_weapon;
 			break;
 		case BOW:
 			cur_weapon = SWORD;
 			setSprite("herosword");
+			//std::cout << cur_weapon;
+=======
+			setSprite("herobowr");
 			std::cout << cur_weapon;
+			break;
+		case BOW:
+			cur_weapon = SWORD;
+			setSprite("heroswordr");
+			std::cout << cur_weapon;
+>>>>>>> Stashed changes
 			break;
 		}
 	}

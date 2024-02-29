@@ -1,6 +1,8 @@
 #pragma once
 #include "Manager.h"
 
+#include "MapGrid.h"
+
 #define MM MapManager::getInstance()
 
 class MapManager : public df::Manager
@@ -11,6 +13,15 @@ private:
 	void operator=(MapManager const&);  // Don't allow assignment  
 	int hero_cell_X;
 	int hero_cell_Y;
+	MapGrid* grid00;
+	MapGrid* grid10;
+	MapGrid* grid20;
+	MapGrid* grid01;
+	MapGrid* grid11;
+	MapGrid* grid21;
+	MapGrid* grid02;
+	MapGrid* grid12;
+	MapGrid* grid22;
 
 public:
 	// Get the one and only instance of the Map Manager.
