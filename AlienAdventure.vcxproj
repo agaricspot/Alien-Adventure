@@ -149,9 +149,11 @@
     <ClCompile Include="EnvironmentObject.cpp" />
     <ClCompile Include="EventDamage.cpp" />
     <ClCompile Include="game.cpp" />
+    <ClCompile Include="GameWin.cpp" />
     <ClCompile Include="Goopling.cpp" />
     <ClCompile Include="Hero.cpp" />
     <ClCompile Include="MapManager.cpp" />
+    <ClCompile Include="Points.cpp" />
     <ClCompile Include="Reticle.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -160,9 +162,11 @@
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="EnvironmentObject.h" />
     <ClInclude Include="EventDamage.h" />
+    <ClInclude Include="GameWin.h" />
     <ClInclude Include="Goopling.h" />
     <ClInclude Include="Hero.h" />
     <ClInclude Include="MapManager.h" />
+    <ClInclude Include="Points.h" />
     <ClInclude Include="Reticle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

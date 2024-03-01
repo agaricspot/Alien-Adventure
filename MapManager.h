@@ -18,13 +18,19 @@ public:
 	static MapManager& getInstance();
 
 	//get the hero cell X
-	int getCellX() const;
+	int getCellX();
 
 	//get the hero cell Y
-	int getCellY() const;
+	int getCellY();
+
+	//get the hero cell X
+	int setCellX(df::Vector pos);
+
+	//get the hero cell Y
+	int setCellY(df::Vector pos);
 
 	//set the hero cells
-	void setCellXY(int x, int y);
+	void setCellXY();
 	
 	//Create the 9 cells and set their sprites/collision boxes.
 	void createWorld();

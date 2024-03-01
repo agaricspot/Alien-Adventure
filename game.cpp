@@ -17,6 +17,7 @@
 #include "Reticle.h"
 #include "Enemy.h"
 #include "MapManager.h"
+#include "Points.h"
 
 void loadResources();
 
@@ -57,6 +58,8 @@ int main(int argc, char* argv[]) {
 
     MM.spawnEnemies();
 
+    new Points();
+
     GM.run();
 
 
@@ -82,6 +85,7 @@ void loadResources() {
     //Misc Sprites
     RM.loadSprite("sprites/arrowleft.txt", "arrowleft");
     RM.loadSprite("sprites/arrowright.txt", "arrowright");
+    RM.loadSprite("sprites/egg.txt", "egg");
 
     //Environment Sprites
     RM.loadSprite("sprites/flower1.txt", "flower");

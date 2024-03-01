@@ -45,6 +45,12 @@
     <ClCompile Include="Beholder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Points.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameWin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Hero.h">
@@ -72,6 +78,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Beholder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Points.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameWin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

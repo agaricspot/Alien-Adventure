@@ -19,19 +19,51 @@ MapManager& MapManager::getInstance() {
 }
 
 //get the hero cell X
-int MapManager::getCellX() const {
+int MapManager::getCellX() {
 	return hero_cell_X;
 }
 
 //get the hero cell Y
-int MapManager::getCellY() const {
+int MapManager::getCellY() {
 	return hero_cell_Y;
 }
 
+//get the hero cell X
+int MapManager::setCellX(df::Vector pos) {
+	if (pos.getX() <= 80 && pos.getX() >= 0) {
+		hero_cell_X = 0;
+		return 0;
+	}
+	if (pos.getX() <= 160 && pos.getX() >= 81) {
+		hero_cell_X = 1;
+		return 1;
+	}
+	if (pos.getX() <= 240 && pos.getX() >= 161) {
+		hero_cell_X = 2;
+		return 2;
+	}
+}
+
+//get the hero cell Y
+int MapManager::setCellY(df::Vector pos) {
+	if (pos.getY() <= 24 && pos.getY() >= 0) {
+		hero_cell_Y = 0;
+		return 0;
+	}
+	else if (pos.getY() <= 48 && pos.getY() >= 25) {
+		hero_cell_Y = 1;
+		return 1;
+	}
+	else if (pos.getY() <= 72 && pos.getY() >= 49) {
+		hero_cell_Y = 2;
+		return 2;
+	}
+}
+
 //set the hero cells. This just does math to see where the hero is each step.
-void MapManager::setCellXY(int x, int y) {
-	hero_cell_X = x;
-	hero_cell_Y = y;
+void MapManager::setCellXY() {
+	int x = getCellX();
+	int y = getCellY();
 	if (x == 0 && y == 0) {
 		df::Box init_view(df::Vector(0, 0), 80, 24);
 		WM.setView(init_view);
@@ -74,7 +106,7 @@ void MapManager::setCellXY(int x, int y) {
 void MapManager::createWorld(){
 	//Place all the map sprites and name them
 
-	EnvironmentObject::makeSpaceship("Wall");
+	EnvironmentObject::makeSpaceship("Spaceship");
 	
 	EnvironmentObject::makeRock("Wall", df::Vector(78, 22), "bigrock");
 
@@ -133,7 +165,6 @@ void MapManager::createWorld(){
 	}
 
 	//Trees
-	EnvironmentObject::makeRock("Wall", df::Vector(92, 54), "tree");      ///bottom center
 	EnvironmentObject::makeRock("Wall", df::Vector(140, 65), "tree");     /// bottom center
 	EnvironmentObject::makeRock("Wall", df::Vector(228, 6), "talltree");  /// top right
 	EnvironmentObject::makeRock("Wall", df::Vector(180, 17), "tree");     /// top right
@@ -158,6 +189,9 @@ void MapManager::createWorld(){
 	EnvironmentObject::makeRock("Wall", df::Vector(194, 39), "smallrock");/// middle right
 	 
 	// TODO : add mushroom powerups
+
+	//Make the egg
+	EnvironmentObject::makeEgg("Egg", df::Vector(228, 64));
 }
 
 //Create enemies
@@ -171,7 +205,7 @@ void MapManager::spawnEnemies() {
 	Enemy::spawnEnemy("goopling", df::Vector(38, 66));    // bottom left
 
 	Enemy::spawnEnemy("chomper", df::Vector(120, 60));    // bottom middle
-	Enemy::spawnEnemy("chomper", df::Vector(200, 36));
+	Enemy::spawnEnemy("chomper", df::Vector(210, 36));
 
 	new Beholder();
 }

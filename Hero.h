@@ -14,6 +14,7 @@ class Hero : public df::Object
 private:
 	int arrow_count;
 	WEAPON cur_weapon;
+	bool egg;
 
 	void move(int dx, int dy);
 	void keyboard(const df::EventKeyboard* keyboard_event);
@@ -34,6 +35,12 @@ private:
 public:
 	Hero();
 	~Hero();
+
+	//set whether the hero has the egg
+	void setEgg(bool hasegg);
+
+	bool getEgg() const;
+
 	int eventHandler(const df::Event* p_e) override;
 };
 

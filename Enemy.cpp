@@ -1,11 +1,13 @@
 #include "Enemy.h"
 #include "Hero.h"
 #include "EventDamage.h"
+#include "Points.h"
 
 #include "EventStep.h"
 #include "WorldManager.h"
 #include "ObjectList.h"
 #include "DisplayManager.h"
+#include "EventView.h"
 
 #include <iostream>
 
@@ -25,10 +27,15 @@ Enemy::Enemy() {
 
 Enemy::~Enemy() {
 	//destroy the enemy
+	df::EventView ev(POINTS_STRING, 3, true);
+	WM.onEvent(&ev);
 }
 
 //Track the hero and set the direction towards them.
 void Enemy::track() {
+	if (detectDistance() > 50) {;
+		return;
+	}
 	df::ObjectList heroList = WM.objectsOfType("Hero");
 	if (heroList.isEmpty()) {
 		setVelocity(df::Vector(0, 0));
