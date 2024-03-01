@@ -18,6 +18,8 @@
 #include "Enemy.h"
 #include "MapManager.h"
 #include "Points.h"
+#include "GameStart.h"
+
 
 void loadResources();
 
@@ -37,6 +39,9 @@ int main(int argc, char* argv[]) {
     // Show splash screen.
     df::splash();
 
+    // Load sprites
+    loadResources();
+
     //Set the world size to a larger world.
     df::Box world_size = WM.getBoundary();
     world_size.setHorizontal(240);
@@ -47,18 +52,7 @@ int main(int argc, char* argv[]) {
     df::Box init_view(df::Vector(0, 24), 80, 24);
     WM.setView(init_view);
 
-    
-    loadResources();
-
-    new Hero();
-
-    new Reticle();
-
-    MM.createWorld();
-
-    MM.spawnEnemies();
-
-    new Points();
+    new GameStart();
 
     GM.run();
 
@@ -86,6 +80,7 @@ void loadResources() {
     RM.loadSprite("sprites/arrowleft.txt", "arrowleft");
     RM.loadSprite("sprites/arrowright.txt", "arrowright");
     RM.loadSprite("sprites/egg.txt", "egg");
+    RM.loadSprite("sprites/start_screen.txt", "start");
 
     //Environment Sprites
     RM.loadSprite("sprites/flower1.txt", "flower");
