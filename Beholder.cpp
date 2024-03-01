@@ -31,7 +31,7 @@ int Beholder::eventHandler(const df::Event* p_e) {
 		else {
 			setSpeed(0.0f);
 		}
-		if (detectDistance() < 10) {
+		if (detectDistance() < 8) {
 			df::ObjectList heroList = WM.objectsOfType("Hero");
 			if (heroList.isEmpty()) {
 				return 0;

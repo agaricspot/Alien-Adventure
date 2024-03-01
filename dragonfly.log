@@ -1,140 +1,414 @@
-09:18:42    0 ****************************************************
-09:18:42    0 ** Dragonfly version 4.19 **
-09:18:42    0 ** Game engine started **
-09:18:42    0 ****************************************************
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/hero_bow.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/hero_sword.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/hero_bow_left.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/hero_sword_left.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/chomper.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/goopling.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/spectator_boss.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/arrowleft.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/arrowright.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/egg.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/flower1.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/flower2.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/mushroom.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/rock_big.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/rock_small.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/rock-b1.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/rock-b2.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/rock-vert1.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/rock-vert2.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/tree.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/tree-vert-b.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/tree-1.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/tree-dense.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/misc-grass-1.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/misc-grass-2.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/misc-grass-3.txt'.
-09:18:46   90 RM::loadSprite(): Loading sprite 'sprites/space_station.txt'.
-09:18:46   90 WorldManager::isValid(): Event df-out handled automatically.
-09:18:46   90 Manager(WorldManager)::registerInterest(): Event 'df-out' not valid for this Manager
-09:18:46    3 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
-09:18:46    4 GameManager::run(): Can't keep up! frame_time 33 ms, split 40 ms
-09:18:46    5 GameManager::run(): Can't keep up! frame_time 33 ms, split 61 ms
-09:18:46    6 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
-09:18:46   10 GameManager::run(): Can't keep up! frame_time 33 ms, split 50 ms
-09:18:46   15 GameManager::run(): Can't keep up! frame_time 33 ms, split 40 ms
-09:18:47   16 GameManager::run(): Can't keep up! frame_time 33 ms, split 45 ms
-09:18:47   17 GameManager::run(): Can't keep up! frame_time 33 ms, split 46 ms
-09:18:47   18 GameManager::run(): Can't keep up! frame_time 33 ms, split 59 ms
-09:18:47   19 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
-09:18:47   20 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
-09:18:47   21 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
-09:18:47   22 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
-09:18:47   23 GameManager::run(): Can't keep up! frame_time 33 ms, split 45 ms
-09:18:47   37 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
-09:18:47   41 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
-09:18:47   42 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
-09:18:48   43 GameManager::run(): Can't keep up! frame_time 33 ms, split 35 ms
-09:18:48   52 GameManager::run(): Can't keep up! frame_time 33 ms, split 50 ms
-09:18:48   53 GameManager::run(): Can't keep up! frame_time 33 ms, split 48 ms
-09:18:48   54 GameManager::run(): Can't keep up! frame_time 33 ms, split 61 ms
-09:18:48   55 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
-09:18:48   56 GameManager::run(): Can't keep up! frame_time 33 ms, split 45 ms
-09:18:48   57 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
-09:18:48   58 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
-09:18:48   64 GameManager::run(): Can't keep up! frame_time 33 ms, split 40 ms
-09:18:49   89 GameManager::run(): Can't keep up! frame_time 33 ms, split 49 ms
-09:18:49   92 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
-09:18:49   93 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
-09:18:50  100 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
-09:18:50  101 GameManager::run(): Can't keep up! frame_time 33 ms, split 48 ms
-09:18:50  102 GameManager::run(): Can't keep up! frame_time 33 ms, split 52 ms
-09:18:50  103 GameManager::run(): Can't keep up! frame_time 33 ms, split 99 ms
-09:18:50  104 GameManager::run(): Can't keep up! frame_time 33 ms, split 48 ms
-09:18:50  105 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
-09:18:50  122 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
-09:18:50  123 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
-09:18:51  124 GameManager::run(): Can't keep up! frame_time 33 ms, split 41 ms
-09:18:51  125 GameManager::run(): Can't keep up! frame_time 33 ms, split 35 ms
-09:18:51  129 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
-09:18:51  130 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
-09:18:51  133 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
-09:18:51  134 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
-09:18:51  135 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
-09:18:51  136 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
-09:18:51  137 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
-09:18:51  138 GameManager::run(): Can't keep up! frame_time 33 ms, split 42 ms
-09:18:51  139 GameManager::run(): Can't keep up! frame_time 33 ms, split 182 ms
-09:18:51  142 GameManager::run(): Can't keep up! frame_time 33 ms, split 46 ms
-09:18:51  143 GameManager::run(): Can't keep up! frame_time 33 ms, split 49 ms
-09:18:51  144 GameManager::run(): Can't keep up! frame_time 33 ms, split 89 ms
-09:18:52  145 GameManager::run(): Can't keep up! frame_time 33 ms, split 39 ms
-09:18:52  146 GameManager::run(): Can't keep up! frame_time 33 ms, split 50 ms
-09:18:52  147 GameManager::run(): Can't keep up! frame_time 33 ms, split 58 ms
-09:18:52  148 GameManager::run(): Can't keep up! frame_time 33 ms, split 140 ms
-09:18:52  160 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
-09:18:52  163 GameManager::run(): Can't keep up! frame_time 33 ms, split 50 ms
-09:18:53  164 GameManager::run(): Can't keep up! frame_time 33 ms, split 46 ms
-09:18:53  165 GameManager::run(): Can't keep up! frame_time 33 ms, split 79 ms
-09:18:53  166 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
-09:18:53  167 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
-09:18:53  177 GameManager::run(): Can't keep up! frame_time 33 ms, split 50 ms
-09:18:53  178 GameManager::run(): Can't keep up! frame_time 33 ms, split 51 ms
-09:18:53  179 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
-09:18:53  189 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
-09:18:53  190 GameManager::run(): Can't keep up! frame_time 33 ms, split 35 ms
-09:18:54  197 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
-09:18:54  211 GameManager::run(): Can't keep up! frame_time 33 ms, split 35 ms
-09:18:54  218 GameManager::run(): Can't keep up! frame_time 33 ms, split 48 ms
-09:18:54  219 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
-09:18:55  220 GameManager::run(): Can't keep up! frame_time 33 ms, split 49 ms
-09:18:55  224 GameManager::run(): Can't keep up! frame_time 33 ms, split 64 ms
-09:18:55  225 GameManager::run(): Can't keep up! frame_time 33 ms, split 44 ms
-09:18:55  226 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
-09:18:55  232 GameManager::run(): Can't keep up! frame_time 33 ms, split 52 ms
-09:18:55  233 GameManager::run(): Can't keep up! frame_time 33 ms, split 52 ms
-09:18:55  234 GameManager::run(): Can't keep up! frame_time 33 ms, split 46 ms
-09:18:55  237 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
-09:18:55  240 GameManager::run(): Can't keep up! frame_time 33 ms, split 42 ms
-09:18:55  241 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
-09:18:56  248 GameManager::run(): Can't keep up! frame_time 33 ms, split 45 ms
-09:18:56  249 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
-09:18:56  250 WorldManager::isValid(): Event df-out handled automatically.
-09:18:56  250 Manager(WorldManager)::registerInterest(): Event 'df-out' not valid for this Manager
-09:18:56  250 WorldManager::isValid(): Event df-collision handled automatically.
-09:18:56  250 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
-09:18:56  250 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
-09:18:56  255 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
-09:18:56  256 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
-09:18:56  257 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
-09:18:56  260 GameManager::run(): Can't keep up! frame_time 33 ms, split 45 ms
-09:18:56  261 GameManager::run(): Can't keep up! frame_time 33 ms, split 35 ms
-09:18:56  262 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
-09:18:56  263 GameManager::run(): Can't keep up! frame_time 33 ms, split 35 ms
-09:18:56  264 GameManager::run(): Can't keep up! frame_time 33 ms, split 41 ms
-09:18:56  268 GameManager::run(): Can't keep up! frame_time 33 ms, split 43 ms
-09:18:56  271 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
-09:18:56  272 GameManager::run(): Can't keep up! frame_time 33 ms, split 43 ms
-09:18:57  273 GameManager::run(): Can't keep up! frame_time 33 ms, split 39 ms
-09:18:57  274 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
-09:18:57  275 GameManager::run(): Can't keep up! frame_time 33 ms, split 39 ms
-09:18:57  276 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
-09:18:57  281 GameManager::run(): Can't keep up! frame_time 33 ms, split 50 ms
-09:18:57  282 GameManager::run(): Can't keep up! frame_time 33 ms, split 49 ms
-09:18:57  283 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
-09:18:57  286 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
-09:18:57  287 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
+09:44:46    0 ****************************************************
+09:44:46    0 ** Dragonfly version 4.19 **
+09:44:46    0 ** Game engine started **
+09:44:46    0 ****************************************************
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/hero_bow.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/hero_sword.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/hero_bow_left.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/hero_sword_left.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/chomper.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/goopling.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/spectator_boss.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/arrowleft.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/arrowright.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/egg.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/flower1.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/flower2.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/mushroom.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/rock_big.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/rock_small.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/rock-b1.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/rock-b2.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/rock-vert1.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/rock-vert2.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/tree.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/tree-vert-b.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/tree-1.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/tree-dense.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/misc-grass-1.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/misc-grass-2.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/misc-grass-3.txt'.
+09:44:49   90 RM::loadSprite(): Loading sprite 'sprites/space_station.txt'.
+09:44:49   90 WorldManager::isValid(): Event df-out handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-out' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:49   90 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:49   90 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:50    3 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:44:50    9 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+09:44:50   10 GameManager::run(): Can't keep up! frame_time 33 ms, split 40 ms
+09:44:50   11 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
+09:44:50   12 GameManager::run(): Can't keep up! frame_time 33 ms, split 41 ms
+09:44:50   13 GameManager::run(): Can't keep up! frame_time 33 ms, split 42 ms
+09:44:50   14 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+09:44:51   31 WorldManager::isValid(): Event df-out handled automatically.
+09:44:51   31 Manager(WorldManager)::registerInterest(): Event 'df-out' not valid for this Manager
+09:44:51   31 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:51   31 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:51   43 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:44:51   44 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:44:51   48 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:44:51   49 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+09:44:51   52 GameManager::run(): Can't keep up! frame_time 33 ms, split 35 ms
+09:44:52   61 GameManager::run(): Can't keep up! frame_time 33 ms, split 50 ms
+09:44:52   62 GameManager::run(): Can't keep up! frame_time 33 ms, split 46 ms
+09:44:52   63 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:44:52   64 GameManager::run(): Can't keep up! frame_time 33 ms, split 44 ms
+09:44:52   65 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
+09:44:52   66 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
+09:44:52   67 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
+09:44:52   68 GameManager::run(): Can't keep up! frame_time 33 ms, split 60 ms
+09:44:52   69 GameManager::run(): Can't keep up! frame_time 33 ms, split 48 ms
+09:44:52   70 GameManager::run(): Can't keep up! frame_time 33 ms, split 39 ms
+09:44:52   78 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:44:52   84 GameManager::run(): Can't keep up! frame_time 33 ms, split 35 ms
+09:44:53   93 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+09:44:53   94 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+09:44:53   95 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
+09:44:53   96 GameManager::run(): Can't keep up! frame_time 33 ms, split 63 ms
+09:44:55  150 GameManager::run(): Can't keep up! frame_time 33 ms, split 45 ms
+09:44:55  167 WorldManager::isValid(): Event df-out handled automatically.
+09:44:55  167 Manager(WorldManager)::registerInterest(): Event 'df-out' not valid for this Manager
+09:44:55  167 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:55  167 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:55  168 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+09:44:56  180 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
+09:44:56  185 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
+09:44:56  186 GameManager::run(): Can't keep up! frame_time 33 ms, split 47 ms
+09:44:56  187 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:44:56  190 GameManager::run(): Can't keep up! frame_time 33 ms, split 115 ms
+09:44:56  191 GameManager::run(): Can't keep up! frame_time 33 ms, split 52 ms
+09:44:56  192 GameManager::run(): Can't keep up! frame_time 33 ms, split 64 ms
+09:44:56  193 GameManager::run(): Can't keep up! frame_time 33 ms, split 60 ms
+09:44:56  194 GameManager::run(): Can't keep up! frame_time 33 ms, split 40 ms
+09:44:56  197 GameManager::run(): Can't keep up! frame_time 33 ms, split 56 ms
+09:44:57  200 GameManager::run(): Can't keep up! frame_time 33 ms, split 49 ms
+09:44:57  201 GameManager::run(): Can't keep up! frame_time 33 ms, split 45 ms
+09:44:57  202 GameManager::run(): Can't keep up! frame_time 33 ms, split 45 ms
+09:44:57  203 GameManager::run(): Can't keep up! frame_time 33 ms, split 53 ms
+09:44:57  204 GameManager::run(): Can't keep up! frame_time 33 ms, split 57 ms
+09:44:57  205 GameManager::run(): Can't keep up! frame_time 33 ms, split 46 ms
+09:44:57  206 GameManager::run(): Can't keep up! frame_time 33 ms, split 40 ms
+09:44:57  213 GameManager::run(): Can't keep up! frame_time 33 ms, split 65 ms
+09:44:57  214 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:44:57  217 GameManager::run(): Can't keep up! frame_time 33 ms, split 46 ms
+09:44:57  218 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+09:44:57  221 GameManager::run(): Can't keep up! frame_time 33 ms, split 39 ms
+09:44:57  222 WorldManager::isValid(): Event df-out handled automatically.
+09:44:57  222 Manager(WorldManager)::registerInterest(): Event 'df-out' not valid for this Manager
+09:44:57  222 WorldManager::isValid(): Event df-collision handled automatically.
+09:44:57  222 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:44:58  222 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
+09:44:58  223 GameManager::run(): Can't keep up! frame_time 33 ms, split 42 ms
+09:44:58  229 GameManager::run(): Can't keep up! frame_time 33 ms, split 35 ms
+09:44:58  230 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+09:44:58  235 GameManager::run(): Can't keep up! frame_time 33 ms, split 59 ms
+09:44:58  236 GameManager::run(): Can't keep up! frame_time 33 ms, split 47 ms
+09:44:58  237 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+09:44:58  238 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:44:58  239 GameManager::run(): Can't keep up! frame_time 33 ms, split 43 ms
+09:44:58  240 GameManager::run(): Can't keep up! frame_time 33 ms, split 57 ms
+09:44:58  241 GameManager::run(): Can't keep up! frame_time 33 ms, split 45 ms
+09:44:58  242 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
+09:44:58  243 GameManager::run(): Can't keep up! frame_time 33 ms, split 47 ms
+09:44:58  244 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
+09:44:58  245 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:44:58  246 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:44:58  247 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+09:44:59  248 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
+09:44:59  251 GameManager::run(): Can't keep up! frame_time 33 ms, split 44 ms
+09:44:59  252 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:44:59  253 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
+09:44:59  254 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+09:44:59  260 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+09:44:59  269 GameManager::run(): Can't keep up! frame_time 33 ms, split 59 ms
+09:44:59  270 GameManager::run(): Can't keep up! frame_time 33 ms, split 52 ms
+09:45:00  277 WorldManager::isValid(): Event df-out handled automatically.
+09:45:00  277 Manager(WorldManager)::registerInterest(): Event 'df-out' not valid for this Manager
+09:45:00  277 WorldManager::isValid(): Event df-collision handled automatically.
+09:45:00  277 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:45:01  308 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
+09:45:03  391 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+09:45:03  392 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:45:03  393 GameManager::run(): Can't keep up! frame_time 33 ms, split 35 ms
+09:45:03  394 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+09:45:03  395 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:45:04  400 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
+09:45:04  401 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:45:04  402 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:45:04  411 GameManager::run(): Can't keep up! frame_time 33 ms, split 79 ms
+09:45:04  412 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:45:04  413 GameManager::run(): Can't keep up! frame_time 33 ms, split 43 ms
+09:45:04  414 GameManager::run(): Can't keep up! frame_time 33 ms, split 47 ms
+09:45:04  415 GameManager::run(): Can't keep up! frame_time 33 ms, split 48 ms
+09:45:04  416 GameManager::run(): Can't keep up! frame_time 33 ms, split 58 ms
+09:45:05  425 GameManager::run(): Can't keep up! frame_time 33 ms, split 42 ms
+09:45:05  426 GameManager::run(): Can't keep up! frame_time 33 ms, split 46 ms
+09:45:05  427 GameManager::run(): Can't keep up! frame_time 33 ms, split 35 ms
+09:45:05  432 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
+09:45:05  433 GameManager::run(): Can't keep up! frame_time 33 ms, split 47 ms
+09:45:05  434 GameManager::run(): Can't keep up! frame_time 33 ms, split 55 ms
+09:45:05  435 GameManager::run(): Can't keep up! frame_time 33 ms, split 59 ms
+09:45:05  436 GameManager::run(): Can't keep up! frame_time 33 ms, split 56 ms
+09:45:05  437 GameManager::run(): Can't keep up! frame_time 33 ms, split 44 ms
+09:45:05  438 GameManager::run(): Can't keep up! frame_time 33 ms, split 48 ms
+09:45:05  439 GameManager::run(): Can't keep up! frame_time 33 ms, split 49 ms
+09:45:05  440 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
+09:45:05  445 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
+09:45:05  446 GameManager::run(): Can't keep up! frame_time 33 ms, split 35 ms
+09:45:06  450 GameManager::run(): Can't keep up! frame_time 33 ms, split 40 ms
+09:45:06  453 GameManager::run(): Can't keep up! frame_time 33 ms, split 35 ms
+09:45:06  454 GameManager::run(): Can't keep up! frame_time 33 ms, split 39 ms
+09:45:06  455 GameManager::run(): Can't keep up! frame_time 33 ms, split 43 ms
+09:45:06  456 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+09:45:06  457 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
+09:45:06  460 GameManager::run(): Can't keep up! frame_time 33 ms, split 61 ms
+09:45:06  461 GameManager::run(): Can't keep up! frame_time 33 ms, split 60 ms
+09:45:06  462 GameManager::run(): Can't keep up! frame_time 33 ms, split 84 ms
+09:45:06  463 GameManager::run(): Can't keep up! frame_time 33 ms, split 65 ms
+09:45:06  464 GameManager::run(): Can't keep up! frame_time 33 ms, split 129 ms
+09:45:06  465 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
+09:45:06  466 GameManager::run(): Can't keep up! frame_time 33 ms, split 54 ms
+09:45:06  467 GameManager::run(): Can't keep up! frame_time 33 ms, split 42 ms
+09:45:07  468 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
+09:45:07  474 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:45:07  475 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:45:07  476 WorldManager::isValid(): Event df-out handled automatically.
+09:45:07  476 Manager(WorldManager)::registerInterest(): Event 'df-out' not valid for this Manager
+09:45:07  476 WorldManager::isValid(): Event df-collision handled automatically.
+09:45:07  476 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:45:07  476 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+09:45:07  477 GameManager::run(): Can't keep up! frame_time 33 ms, split 46 ms
+09:45:08  501 GameManager::run(): Can't keep up! frame_time 33 ms, split 48 ms
+09:45:08  502 GameManager::run(): Can't keep up! frame_time 33 ms, split 41 ms
+09:45:08  503 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
+09:45:08  512 GameManager::run(): Can't keep up! frame_time 33 ms, split 49 ms
+09:45:08  513 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:45:08  514 GameManager::run(): Can't keep up! frame_time 33 ms, split 45 ms
+09:45:08  515 GameManager::run(): Can't keep up! frame_time 33 ms, split 46 ms
+09:45:08  516 GameManager::run(): Can't keep up! frame_time 33 ms, split 43 ms
+09:45:08  517 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+09:45:09  523 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+09:45:09  528 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:45:09  529 GameManager::run(): Can't keep up! frame_time 33 ms, split 35 ms
+09:45:09  530 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+09:45:09  531 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+09:45:09  532 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:45:09  535 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+09:45:09  543 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:45:10  557 GameManager::run(): Can't keep up! frame_time 33 ms, split 47 ms
+09:45:10  558 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:45:10  559 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
+09:45:10  560 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+09:45:10  570 WorldManager::isValid(): Event df-out handled automatically.
+09:45:10  570 Manager(WorldManager)::registerInterest(): Event 'df-out' not valid for this Manager
+09:45:10  570 WorldManager::isValid(): Event df-collision handled automatically.
+09:45:10  570 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+09:45:11  599 GameManager::run(): Can't keep up! frame_time 33 ms, split 40 ms
+09:45:11  600 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+09:45:11  601 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:45:11  602 GameManager::run(): Can't keep up! frame_time 33 ms, split 46 ms
+09:45:11  603 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
+09:45:12  619 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
+09:45:12  620 GameManager::run(): Can't keep up! frame_time 33 ms, split 46 ms
+09:45:12  626 GameManager::run(): Can't keep up! frame_time 33 ms, split 35 ms
+09:45:12  630 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
+09:45:13  651 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:45:13  652 GameManager::run(): Can't keep up! frame_time 33 ms, split 34 ms
+09:45:13  653 GameManager::run(): Can't keep up! frame_time 33 ms, split 43 ms
+09:45:13  654 GameManager::run(): Can't keep up! frame_time 33 ms, split 52 ms
+09:45:13  655 GameManager::run(): Can't keep up! frame_time 33 ms, split 49 ms
+09:45:13  660 GameManager::run(): Can't keep up! frame_time 33 ms, split 35 ms
+09:45:13  661 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:45:13  665 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:45:13  666 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
+09:45:14  670 GameManager::run(): Can't keep up! frame_time 33 ms, split 49 ms
+09:45:14  671 GameManager::run(): Can't keep up! frame_time 33 ms, split 329 ms
+09:45:14  672 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+09:45:14  673 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+09:45:14  674 GameManager::run(): Can't keep up! frame_time 33 ms, split 64 ms
+09:45:14  675 GameManager::run(): Can't keep up! frame_time 33 ms, split 43 ms
+09:45:14  678 GameManager::run(): Can't keep up! frame_time 33 ms, split 48 ms
+09:45:14  683 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
+09:45:15  684 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:45:15  687 GameManager::run(): Can't keep up! frame_time 33 ms, split 33 ms
+09:45:15  688 GameManager::run(): Can't keep up! frame_time 33 ms, split 53 ms
+09:45:15  689 GameManager::run(): Can't keep up! frame_time 33 ms, split 46 ms
+09:45:15  690 GameManager::run(): Can't keep up! frame_time 33 ms, split 39 ms
+09:45:15  691 GameManager::run(): Can't keep up! frame_time 33 ms, split 44 ms
+09:45:15  692 GameManager::run(): Can't keep up! frame_time 33 ms, split 53 ms

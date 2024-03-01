@@ -1,11 +1,17 @@
 #include "EnvironmentObject.h"
 
+#include "EventCollision.h"
+#include "ObjectList.h"
+#include "WorldManager.h"
+#include "Hero.h"
+
 #include <iostream>
 
 // Generic constructor for an environment object. Private. Only called via the makeFoo methods
 EnvironmentObject::EnvironmentObject(std::string type, df::Vector pos) {
 	setType(type);
 	setPosition(pos);
+	registerInterest(df::COLLISION_EVENT);
 }
 
 //Make a mushroom power up
@@ -47,4 +53,21 @@ EnvironmentObject* EnvironmentObject::makeEgg(std::string type, df::Vector pos) 
 	eo->setSolidness(df::SOFT);
 	eo->setAltitude(1);
 	return eo;
+}
+
+//Handle collisions
+int EnvironmentObject::eventHandler(const df::Event* p_e){
+	if (p_e->getType() == df::COLLISION_EVENT) {
+		const df::EventCollision* p_keyboard_event = dynamic_cast <const df::EventCollision*> (p_e);
+		if (getType() == "Egg") {
+			df::ObjectList heroList = WM.objectsOfType("Hero");
+			if (heroList.isEmpty()) {
+				return -1;
+			}
+			Hero* hero = dynamic_cast <Hero*> (heroList[0]); // This is probably bad practice. But I Need it
+			hero->setEgg(true);
+		}
+		return 1;
+	}
+	return 0;
 }

@@ -21,5 +21,8 @@ public:
 
 	//Make the egg
 	static EnvironmentObject* makeEgg(std::string type, df::Vector pos);
+
+	//Handle events. Mostly just collisions
+	int eventHandler(const df::Event* p_e) override;
 };
 

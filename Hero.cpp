@@ -21,6 +21,7 @@ Hero::Hero() {
 	df::Vector p(40, 36);
 	setPosition(p);
 	cur_weapon = SWORD;
+	egg = false;
 	MM.setCellXY();
 }
 
@@ -193,4 +194,9 @@ float Hero::detectDistance(Object *other) const{
 	df::Vector diff = o_pos - h_pos;
 	float distance = diff.getMagnitude();
 	return distance;
+}
+
+//set the egg value
+void Hero::setEgg(bool hasegg) {
+	egg = hasegg;
 }
