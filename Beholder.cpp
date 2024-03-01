@@ -7,7 +7,7 @@
 
 
 Beholder::Beholder() {
-	setSprite("chomper");
+	setSprite("beholder");
 	setSolidness(df::SOFT);
 	isMoving = false;
 	setPosition(df::Vector(215, 62));
@@ -28,6 +28,9 @@ int Beholder::eventHandler(const df::Event* p_e) {
 		}
 		if (detectDistance() < 10) {
 			df::ObjectList heroList = WM.objectsOfType("Hero");
+			if (heroList.isEmpty()) {
+				return 0;
+			}
 			df::Object* hero = heroList[0];
 			EventDamage d(1);
 			hero->eventHandler(&d);

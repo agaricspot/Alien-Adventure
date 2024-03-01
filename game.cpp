@@ -77,6 +77,7 @@ void loadResources() {
     //Enemy Sprites
     RM.loadSprite("sprites/chomper.txt", "chomper");
     RM.loadSprite("sprites/goopling.txt", "goopling");
+    RM.loadSprite("sprites/spectator_boss.txt", "beholder");
 
     //Misc Sprites
     RM.loadSprite("sprites/arrowleft.txt", "arrowleft");
