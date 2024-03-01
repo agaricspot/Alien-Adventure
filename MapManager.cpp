@@ -1,5 +1,6 @@
 #include "MapManager.h"
 #include "EnvironmentObject.h"
+#include "Enemy.h"
 
 #include "WorldManager.h"
 #include "DisplayManager.h"
@@ -26,7 +27,7 @@ int MapManager::getCellY() const {
 	return hero_cell_Y;
 }
 
-//set the hero cells
+//set the hero cells. This just does math to see where the hero is each step.
 void MapManager::setCellXY(int x, int y) {
 	hero_cell_X = x;
 	hero_cell_Y = y;
@@ -69,7 +70,7 @@ void MapManager::setCellXY(int x, int y) {
 }
 
 //Create the world
-void MapManager::createWorld() {
+void MapManager::createWorld(){
 	//Place all the map sprites and name them
 
 	EnvironmentObject::makeSpaceship("Wall");
@@ -156,4 +157,18 @@ void MapManager::createWorld() {
 	EnvironmentObject::makeRock("Wall", df::Vector(194, 39), "smallrock");/// middle right
 	 
 	// TODO : add mushroom powerups
+}
+
+//Create enemies
+void MapManager::spawnEnemies() {
+	Enemy::spawnEnemy("goopling", df::Vector(15, 5));     // top left
+	Enemy::spawnEnemy("goopling", df::Vector(56, 5));     // top left
+	Enemy::spawnEnemy("goopling", df::Vector(120, 8));    // top center
+	Enemy::spawnEnemy("goopling", df::Vector(210, 5));    // top right
+	Enemy::spawnEnemy("goopling", df::Vector(215, 18));   // top right
+	Enemy::spawnEnemy("goopling", df::Vector(15, 55));    // bottom left
+	Enemy::spawnEnemy("goopling", df::Vector(38, 66));    // bottom left
+
+	Enemy::spawnEnemy("chomper", df::Vector(120, 60));    // bottom middle
+	Enemy::spawnEnemy("goopling", df::Vector(200, 36));
 }

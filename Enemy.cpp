@@ -9,11 +9,11 @@
 
 #include <iostream>
 
-Enemy::Enemy() {
+Enemy::Enemy(std::string sprite, df::Vector pos) {
 	setType("Enemy");
 	registerInterest(df::STEP_EVENT);
-	setSprite("goopling");
-	setPosition(df::Vector(0, 48));
+	setSprite(sprite);
+	setPosition(pos);
 	setSpeed(0.15);
 }
 
@@ -88,4 +88,9 @@ int Enemy::attack() {
 	EventDamage d(1);
 	hero->eventHandler(&d);
 	return d.getDamage();
+}
+
+Enemy* Enemy::spawnEnemy(std::string sprite, df::Vector pos) {
+	Enemy* e = new Enemy(sprite, pos);
+	return e;
 }

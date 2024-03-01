@@ -54,9 +54,9 @@ int main(int argc, char* argv[]) {
 
     new Reticle();
 
-    new Enemy();
-
     MM.createWorld();
+
+    MM.spawnEnemies();
 
     GM.run();
 
