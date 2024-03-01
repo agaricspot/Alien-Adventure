@@ -149,6 +149,7 @@
     <ClCompile Include="EnvironmentObject.cpp" />
     <ClCompile Include="EventDamage.cpp" />
     <ClCompile Include="game.cpp" />
+    <ClCompile Include="GameStart.cpp" />
     <ClCompile Include="GameWin.cpp" />
     <ClCompile Include="Goopling.cpp" />
     <ClCompile Include="Hero.cpp" />
@@ -162,6 +163,7 @@
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="EnvironmentObject.h" />
     <ClInclude Include="EventDamage.h" />
+    <ClInclude Include="GameStart.h" />
     <ClInclude Include="GameWin.h" />
     <ClInclude Include="Goopling.h" />
     <ClInclude Include="Hero.h" />

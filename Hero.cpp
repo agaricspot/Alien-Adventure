@@ -12,6 +12,7 @@
 #include "utility.h"
 
 #include <iostream>
+#include <GameManager.h>
 
 
 Hero::Hero() {
@@ -103,7 +104,11 @@ void Hero::keyboard(const df::EventKeyboard* keyboard_event) {
 			}
 		}
 		break;
+	case df::Keyboard::Q:     // Quit
+		GM.setGameOver();
+		break;
 	}
+
 }
 
 // Mouse clicks. This fires the weapon with left click
