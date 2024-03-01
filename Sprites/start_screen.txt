@@ -1,0 +1,32 @@
+<HEADER>
+frames 2
+width 78
+height 9
+color green
+slowdown 15
+</HEADER>
+<BODY>
+    ____  __                    ____      __                 __                
+   / __ \/ / _ ___  ____       / __ \___ / /_  _ ___  ____  / /__   __ ____ __ 
+  / /_/ / / /_/ _ \/ __ \     / /_/ / __' / / / / _ \/ __ \/ __/ / / / ___/ _ \
+ / __  / / / /  __/ / / /    / __  / /_/ / /_/ /  __/ / / / /_/ /_/ / /  /  __/
+/_/ /_/\_\/_/\___/_/ /_/    /_/ /_/\____/\____/\___/_/ /_/\__/\__,_/_/   \___/ 
+                                                                               
+ Controls: WASD to Move, Left Click to Attack, Right Click to Switch Weapons   
+                                                                               
+                        Press 'p' to play, 'q' to quit                         
+end
+    ____  __                    ____      __                 __                
+   / __ \/ / _ ___  ____       / __ \___ / /_  _ ___  ____  / /__   __ ____ __ 
+  / /_/ / / /_/ _ \/ __ \     / /_/ / __' / / / / _ \/ __ \/ __/ / / / ___/ _ \
+ / __  / / / /  __/ / / /    / __  / /_/ / /_/ /  __/ / / / /_/ /_/ / /  /  __/
+/_/ /_/\_\/_/\___/_/ /_/    /_/ /_/\____/\____/\___/_/ /_/\__/\__,_/_/   \___/ 
+                                                                               
+ Controls: WASD to Move, Left Click to Attack, Right Click to Switch Weapons   
+                                                                               
+                                                                               
+end
+</BODY>
+<FOOTER>
+version 1
+</FOOTER>
