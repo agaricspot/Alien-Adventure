@@ -71,24 +71,24 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\owen\Documents\Visual Studio 2022\Projects\SFML-2.6\include;C:\Users\owen\Documents\Visual Studio 2022\Projects\dragonfly\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\owen\Documents\Visual Studio 2022\Projects\SFML-2.6\lib;C:\Users\owen\Documents\Visual Studio 2022\Projects\dragonfly\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\jaywe\Documents\Visual Studio 2022\IMGD 3000 projects\SFML-2.6.1\include;C:\Users\jaywe\Documents\Visual Studio 2022\IMGD 3000 projects\dragonfly\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\jaywe\Documents\Visual Studio 2022\IMGD 3000 projects\dragonfly\lib;C:\Users\jaywe\Documents\Visual Studio 2022\IMGD 3000 projects\SFML-2.6.1\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\Users\owen\Documents\Visual Studio 2022\Projects\SFML-2.6\include;C:\Users\owen\Documents\Visual Studio 2022\Projects\dragonfly\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\jaywe\Documents\Visual Studio 2022\IMGD 3000 projects\SFML-2.6.1\include;C:\Users\jaywe\Documents\Visual Studio 2022\IMGD 3000 projects\dragonfly\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\owen\Documents\Visual Studio 2022\Projects\SFML-2.6\include;C:\Users\owen\Documents\Visual Studio 2022\Projects\dragonfly\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\owen\Documents\Visual Studio 2022\Projects\SFML-2.6\lib;C:\Users\owen\Documents\Visual Studio 2022\Projects\dragonfly\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\jaywe\Documents\Visual Studio 2022\IMGD 3000 projects\SFML-2.6.1\include;C:\Users\jaywe\Documents\Visual Studio 2022\IMGD 3000 projects\dragonfly\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\jaywe\Documents\Visual Studio 2022\IMGD 3000 projects\dragonfly\lib;C:\Users\jaywe\Documents\Visual Studio 2022\IMGD 3000 projects\SFML-2.6.1\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>C:\Users\owen\Documents\Visual Studio 2022\Projects\SFML-2.6\include;C:\Users\owen\Documents\Visual Studio 2022\Projects\dragonfly\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\jaywe\Documents\Visual Studio 2022\IMGD 3000 projects\SFML-2.6.1\include;C:\Users\jaywe\Documents\Visual Studio 2022\IMGD 3000 projects\dragonfly\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);NOMINMAX</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -117,7 +117,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);NOMINMAX</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
