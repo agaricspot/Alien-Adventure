@@ -92,8 +92,11 @@ void loadResources() {
     RM.loadSprite("sprites/rock_small.txt", "smallrock");
     RM.loadSprite("sprites/rock-b1.txt", "hwall1");
     RM.loadSprite("sprites/rock-b2.txt", "hwall2");
+    RM.loadSprite("sprites/rock-vert1.txt", "vwall1");
+    RM.loadSprite("sprites/rock-vert2.txt", "vwall2");
 
     RM.loadSprite("sprites/tree.txt", "tree");
+    RM.loadSprite("sprites/tree-vert-b.txt", "talltree");
     RM.loadSprite("sprites/tree-1.txt", "tree1");
     RM.loadSprite("sprites/tree-dense.txt", "treedense");
     RM.loadSprite("sprites/misc-grass-1.txt", "grass1");

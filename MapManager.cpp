@@ -85,8 +85,75 @@ void MapManager::createWorld() {
 		EnvironmentObject::makeRock("Wall", df::Vector((9 * i), 1), "hwall2");
 	}
 
-	// TODO : add map walls
-	// TODO : add flowers/grass
-	// TODO : add random rocks
+	//0-0 left wall
+	for (int i = 0; i < 3; i++){
+		if (i % 2 == 0) {
+			EnvironmentObject::makeRock("Wall", df::Vector(1, (8 * i) + 4), "vwall1");
+			continue;
+		}
+		EnvironmentObject::makeRock("Wall", df::Vector(1, (8 * i) + 4), "vwall2");
+	}
+
+	//Full Top wall
+	for (int i = 0; i < 20; i++) {
+		if (i % 2 == 0) {
+			EnvironmentObject::makeRock("Wall", df::Vector((9 * i) + 80, 1), "tree1");
+			continue;
+		}
+		EnvironmentObject::makeRock("Wall", df::Vector((9 * i) + 80, 0), "treedense");
+	}
+
+	//Right wall
+	for (int i = 0; i < 6; i++) {
+		if (i % 2 == 0) {
+			EnvironmentObject::makeRock("Wall", df::Vector(238, (9 * i) + 4), "tree");
+			continue;
+		}
+		EnvironmentObject::makeRock("Wall", df::Vector(235, (9 * i) + 4), "talltree");
+	}
+
+	//0-2 left wall
+	for (int i = 0; i < 3; i++) {
+		if (i % 2 == 0) {
+			EnvironmentObject::makeRock("Wall", df::Vector(1, (8 * i) + 52), "tree");
+			continue;
+		}
+		EnvironmentObject::makeRock("Wall", df::Vector(1, (8 * i) + 52), "talltree");
+	}
+
+	//Full lower wall
+	for (int i = 0; i < 30; i++) {
+		if (i % 2 == 0) {
+			EnvironmentObject::makeRock("Wall", df::Vector((9 * i) , 70), "hwall1");
+			continue;
+		}
+		EnvironmentObject::makeRock("Wall", df::Vector((9 * i), 71), "hwall2");
+	}
+
+	//Trees
+	EnvironmentObject::makeRock("Wall", df::Vector(92, 54), "tree");      ///bottom center
+	EnvironmentObject::makeRock("Wall", df::Vector(140, 65), "tree");     /// bottom center
+	EnvironmentObject::makeRock("Wall", df::Vector(228, 6), "talltree");  /// top right
+	EnvironmentObject::makeRock("Wall", df::Vector(180, 17), "tree");     /// top right
+	EnvironmentObject::makeRock("Wall", df::Vector(120, 16), "talltree"); /// top center
+	EnvironmentObject::makeRock("Wall", df::Vector(66, 33), "talltree");
+
+	//flowers/grass
+	
+
+
+	//add random rocks
+	EnvironmentObject::makeRock("Wall", df::Vector(30, 14), "smallrock"); /// topleft
+	EnvironmentObject::makeRock("Wall", df::Vector(65, 64), "smallrock"); /// bottom left
+	EnvironmentObject::makeRock("Wall", df::Vector(25, 50), "smallrock"); /// bottom left
+	EnvironmentObject::makeRock("Wall", df::Vector(62, 40), "smallrock"); /// middle left
+	EnvironmentObject::makeRock("Wall", df::Vector(69, 46), "smallrock"); /// middle left
+
+	EnvironmentObject::makeRock("Wall", df::Vector(85, 20), "smallrock"); /// top center
+	EnvironmentObject::makeRock("Wall", df::Vector(145, 5), "smallrock"); /// top center
+
+	EnvironmentObject::makeRock("Wall", df::Vector(183, 37), "smallrock");/// middle right
+	EnvironmentObject::makeRock("Wall", df::Vector(194, 39), "smallrock");/// middle right
+	 
 	// TODO : add mushroom powerups
 }
