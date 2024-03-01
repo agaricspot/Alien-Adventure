@@ -16,7 +16,6 @@
 #include "Hero.h"
 #include "Reticle.h"
 #include "Enemy.h"
-#include "MapGrid.h"
 #include "MapManager.h"
 
 void loadResources();

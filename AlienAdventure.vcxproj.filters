@@ -36,13 +36,13 @@
     <ClCompile Include="Goopling.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MapGrid.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="MapManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="EnvironmentObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Beholder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -65,13 +65,13 @@
     <ClInclude Include="Goopling.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MapGrid.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="MapManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="EnvironmentObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Beholder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

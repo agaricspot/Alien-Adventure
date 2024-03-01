@@ -144,24 +144,24 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Arrow.cpp" />
+    <ClCompile Include="Beholder.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="EnvironmentObject.cpp" />
     <ClCompile Include="EventDamage.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="Goopling.cpp" />
     <ClCompile Include="Hero.cpp" />
-    <ClCompile Include="MapGrid.cpp" />
     <ClCompile Include="MapManager.cpp" />
     <ClCompile Include="Reticle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Arrow.h" />
+    <ClInclude Include="Beholder.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="EnvironmentObject.h" />
     <ClInclude Include="EventDamage.h" />
     <ClInclude Include="Goopling.h" />
     <ClInclude Include="Hero.h" />
-    <ClInclude Include="MapGrid.h" />
     <ClInclude Include="MapManager.h" />
     <ClInclude Include="Reticle.h" />
   </ItemGroup>

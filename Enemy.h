@@ -11,11 +11,14 @@ private:
 	int attack_slowdown = 35;
 	int attack_countdown = attack_slowdown;
 
-	void track();
+	
 	Enemy(std::string sprite, df::Vector pos);
 
+protected:
+	void track();
+
 public:
-	
+	Enemy();
 	~Enemy();
 
 	int eventHandler(const df::Event* p_e) override;
