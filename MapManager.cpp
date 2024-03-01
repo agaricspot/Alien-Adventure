@@ -170,5 +170,5 @@ void MapManager::spawnEnemies() {
 	Enemy::spawnEnemy("goopling", df::Vector(38, 66));    // bottom left
 
 	Enemy::spawnEnemy("chomper", df::Vector(120, 60));    // bottom middle
-	Enemy::spawnEnemy("goopling", df::Vector(200, 36));
+	Enemy::spawnEnemy("chomper", df::Vector(200, 36));
 }

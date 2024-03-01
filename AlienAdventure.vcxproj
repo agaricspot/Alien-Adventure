@@ -150,7 +150,6 @@
     <ClCompile Include="game.cpp" />
     <ClCompile Include="Goopling.cpp" />
     <ClCompile Include="Hero.cpp" />
-    <ClCompile Include="MapGrid.cpp" />
     <ClCompile Include="MapManager.cpp" />
     <ClCompile Include="Reticle.cpp" />
   </ItemGroup>
@@ -161,7 +160,6 @@
     <ClInclude Include="EventDamage.h" />
     <ClInclude Include="Goopling.h" />
     <ClInclude Include="Hero.h" />
-    <ClInclude Include="MapGrid.h" />
     <ClInclude Include="MapManager.h" />
     <ClInclude Include="Reticle.h" />
   </ItemGroup>
