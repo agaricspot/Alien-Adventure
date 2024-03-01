@@ -7,6 +7,9 @@
 #include "EventStep.h"
 #include "EventOut.h"
 #include "ObjectListIterator.h"
+#include "Particle.h"
+#include "DisplayManager.h"
+#include "utility.h"
 
 #include <iostream>
 
@@ -183,7 +186,10 @@ void Hero::move(int dx, int dy) {
 // Sequence of actions to do when the hero dies. For now, just remove the hero.
 void Hero::defeat() {
 	//Dead sprite, stuff, etc.
-	WM.markForDelete(this);
+	df::addParticles(df::SPARKS, getPosition(), 2, df::CYAN);
+	setPosition(df::Vector(40, 36));
+	MM.setCellXY();
+	//WM.markForDelete(this);
 }
 
 float Hero::detectDistance(Object *other) const{
@@ -199,4 +205,8 @@ float Hero::detectDistance(Object *other) const{
 //set the egg value
 void Hero::setEgg(bool hasegg) {
 	egg = hasegg;
+}
+
+bool Hero::getEgg() const {
+	return egg;
 }

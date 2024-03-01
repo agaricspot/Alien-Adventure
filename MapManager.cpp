@@ -106,7 +106,7 @@ void MapManager::setCellXY() {
 void MapManager::createWorld(){
 	//Place all the map sprites and name them
 
-	EnvironmentObject::makeSpaceship("Wall");
+	EnvironmentObject::makeSpaceship("Spaceship");
 	
 	EnvironmentObject::makeRock("Wall", df::Vector(78, 22), "bigrock");
 

@@ -17,6 +17,7 @@
 #include "Reticle.h"
 #include "Enemy.h"
 #include "MapManager.h"
+#include "Points.h"
 
 void loadResources();
 
@@ -56,6 +57,8 @@ int main(int argc, char* argv[]) {
     MM.createWorld();
 
     MM.spawnEnemies();
+
+    new Points();
 
     GM.run();
 

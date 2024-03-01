@@ -3,7 +3,9 @@
 #include "EventCollision.h"
 #include "ObjectList.h"
 #include "WorldManager.h"
+
 #include "Hero.h"
+#include "GameWin.h"
 
 #include <iostream>
 
@@ -70,6 +72,18 @@ int EnvironmentObject::eventHandler(const df::Event* p_e){
 			WM.markForDelete(this);
 			std::cout << "Got the egg!" << std::endl;
 		}
+		if ((c_event->getObject1()->getType() == "Spaceship" || c_event->getObject2()->getType() == "Spaceship") &&
+			!(c_event->getObject1()->getType() == "Enemy" || c_event->getObject2()->getType() == "Enemy")) {
+			df::ObjectList heroList = WM.objectsOfType("Hero");
+			if (heroList.isEmpty()) {
+				return -1;
+			}
+			Hero* hero = dynamic_cast <Hero*> (heroList[0]); // This is probably bad practice. But I Need it
+			if (hero->getEgg()) {
+				new GameWin();
+			}
+			// You win!
+		} 
 		return 1;
 	}
 	return 0;

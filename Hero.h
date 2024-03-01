@@ -39,6 +39,8 @@ public:
 	//set whether the hero has the egg
 	void setEgg(bool hasegg);
 
+	bool getEgg() const;
+
 	int eventHandler(const df::Event* p_e) override;
 };
 
