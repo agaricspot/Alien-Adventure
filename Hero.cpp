@@ -21,7 +21,7 @@ Hero::Hero() {
 	df::Vector p(40, 36);
 	setPosition(p);
 	cur_weapon = SWORD;
-	MM.setCellXY(0, 1);
+	MM.setCellXY();
 }
 
 Hero::~Hero() { //do nothing for now
@@ -100,8 +100,6 @@ void Hero::keyboard(const df::EventKeyboard* keyboard_event) {
 		}
 		break;
 	}
-	setMapCellX();
-	setMapCellY();
 }
 
 // Mouse clicks. This fires the weapon with left click
@@ -135,6 +133,9 @@ void Hero::step() {
 	if (arrow_countdown < 0){
 		arrow_countdown = 0;
 	}
+	MM.setCellX(getPosition());
+	MM.setCellY(getPosition());
+	MM.setCellXY();
 }
 
 void Hero::attack(df::Vector target, WEAPON weapon) {
@@ -192,28 +193,4 @@ float Hero::detectDistance(Object *other) const{
 	df::Vector diff = o_pos - h_pos;
 	float distance = diff.getMagnitude();
 	return distance;
-}
-
-void Hero::setMapCellX()  {
-	if (getPosition().getX() <= 80 && getPosition().getX() >= 0) {
-		MM.setCellXY(0, MM.getCellY());
-	}
-	else if (getPosition().getX() <= 160 && getPosition().getX() >= 81) {
-		MM.setCellXY(1, MM.getCellY());
-	}
-	else if (getPosition().getX() <= 240 && getPosition().getX() >= 161) {
-		MM.setCellXY(2, MM.getCellY());
-	}
-}
-
-void Hero::setMapCellY()  {
-	if (getPosition().getY() <= 24 && getPosition().getY() >= 0) {
-		MM.setCellXY(MM.getCellX(), 0);
-	}
-	else if (getPosition().getY() <= 48 && getPosition().getY() >= 25) {
-		MM.setCellXY(MM.getCellX(), 1);
-	}
-	else if (getPosition().getY() <= 72 && getPosition().getY() >= 49) {
-		MM.setCellXY(MM.getCellX(), 2);
-	}
 }
