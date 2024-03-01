@@ -144,6 +144,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Arrow.cpp" />
+    <ClCompile Include="Beholder.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="EnvironmentObject.cpp" />
     <ClCompile Include="EventDamage.cpp" />
@@ -155,6 +156,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Arrow.h" />
+    <ClInclude Include="Beholder.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="EnvironmentObject.h" />
     <ClInclude Include="EventDamage.h" />

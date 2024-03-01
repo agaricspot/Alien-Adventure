@@ -14,7 +14,13 @@ Enemy::Enemy(std::string sprite, df::Vector pos) {
 	registerInterest(df::STEP_EVENT);
 	setSprite(sprite);
 	setPosition(pos);
-	setSpeed(0.15);
+	setSpeed(0.15f);
+}
+
+Enemy::Enemy() {
+	setType("Enemy");
+	registerInterest(df::STEP_EVENT);
+	setSpeed(0.15f);
 }
 
 Enemy::~Enemy() {

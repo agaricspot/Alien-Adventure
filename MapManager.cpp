@@ -1,6 +1,7 @@
 #include "MapManager.h"
 #include "EnvironmentObject.h"
 #include "Enemy.h"
+#include "Beholder.h"
 
 #include "WorldManager.h"
 #include "DisplayManager.h"
@@ -171,4 +172,6 @@ void MapManager::spawnEnemies() {
 
 	Enemy::spawnEnemy("chomper", df::Vector(120, 60));    // bottom middle
 	Enemy::spawnEnemy("chomper", df::Vector(200, 36));
+
+	new Beholder();
 }
