@@ -58,14 +58,17 @@ EnvironmentObject* EnvironmentObject::makeEgg(std::string type, df::Vector pos) 
 //Handle collisions
 int EnvironmentObject::eventHandler(const df::Event* p_e){
 	if (p_e->getType() == df::COLLISION_EVENT) {
-		const df::EventCollision* p_keyboard_event = dynamic_cast <const df::EventCollision*> (p_e);
-		if (getType() == "Egg") {
+		const df::EventCollision* c_event = dynamic_cast <const df::EventCollision*> (p_e);
+		if ((c_event->getObject1()->getType() == "Egg" || c_event->getObject2()->getType() == "Egg") && 
+			!(c_event->getObject1()->getType() == "Enemy" || c_event->getObject2()->getType() == "Enemy")) {
 			df::ObjectList heroList = WM.objectsOfType("Hero");
 			if (heroList.isEmpty()) {
 				return -1;
 			}
 			Hero* hero = dynamic_cast <Hero*> (heroList[0]); // This is probably bad practice. But I Need it
 			hero->setEgg(true);
+			WM.markForDelete(this);
+			std::cout << "Got the egg!" << std::endl;
 		}
 		return 1;
 	}
