@@ -29,6 +29,9 @@ Enemy::~Enemy() {
 
 //Track the hero and set the direction towards them.
 void Enemy::track() {
+	if (detectDistance() > 50) {;
+		return;
+	}
 	df::ObjectList heroList = WM.objectsOfType("Hero");
 	if (heroList.isEmpty()) {
 		setVelocity(df::Vector(0, 0));

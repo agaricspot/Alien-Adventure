@@ -5,6 +5,7 @@ class Beholder : public Enemy
 {
 private:
 	bool isMoving;
+	bool active = false;
 
 public:
 	Beholder();

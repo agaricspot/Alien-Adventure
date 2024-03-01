@@ -39,3 +39,12 @@ EnvironmentObject* EnvironmentObject::makeRock(std::string type, df::Vector pos,
 	eo->setSprite(sprite);
 	return eo;
 }
+
+//Make the egg
+EnvironmentObject* EnvironmentObject::makeEgg(std::string type, df::Vector pos) {
+	EnvironmentObject* eo = new EnvironmentObject(type, pos);
+	eo->setSprite("egg");
+	eo->setSolidness(df::SOFT);
+	eo->setAltitude(1);
+	return eo;
+}

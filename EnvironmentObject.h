@@ -18,5 +18,8 @@ public:
 
 	//Make a rock. Value for size in input
 	static EnvironmentObject* makeRock(std::string type, df::Vector pos, std::string sprite);
+
+	//Make the egg
+	static EnvironmentObject* makeEgg(std::string type, df::Vector pos);
 };
 

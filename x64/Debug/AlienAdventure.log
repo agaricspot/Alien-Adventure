@@ -1,2 +1,15 @@
-﻿  Beholder.cpp
+﻿  MapManager.cpp
+C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\MapManager.cpp(84,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\MapManager.cpp(87,53): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\MapManager.cpp(93,62): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\MapManager.cpp(96,61): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\MapManager.cpp(102,59): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\MapManager.cpp(105,58): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\MapManager.cpp(111,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\MapManager.cpp(114,63): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\MapManager.cpp(120,62): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\MapManager.cpp(123,61): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\MapManager.cpp(129,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\MapManager.cpp(132,53): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+libdragonfly-x64-debug.lib(utility.obj) : warning LNK4099: PDB '' was not found with 'libdragonfly-x64-debug.lib(utility.obj)' or at ''; linking object as if no debug info
   AlienAdventure.vcxproj -> C:\Users\owen\Documents\Visual Studio 2022\Projects\AlienAdventure\x64\Debug\AlienAdventure.exe

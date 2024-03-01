@@ -158,6 +158,9 @@ void MapManager::createWorld(){
 	EnvironmentObject::makeRock("Wall", df::Vector(194, 39), "smallrock");/// middle right
 	 
 	// TODO : add mushroom powerups
+
+	//Make the egg
+	EnvironmentObject::makeEgg("Egg", df::Vector(228, 64));
 }
 
 //Create enemies
@@ -171,7 +174,7 @@ void MapManager::spawnEnemies() {
 	Enemy::spawnEnemy("goopling", df::Vector(38, 66));    // bottom left
 
 	Enemy::spawnEnemy("chomper", df::Vector(120, 60));    // bottom middle
-	Enemy::spawnEnemy("chomper", df::Vector(200, 36));
+	Enemy::spawnEnemy("chomper", df::Vector(210, 36));
 
 	new Beholder();
 }
