@@ -38,5 +38,8 @@ public:
 	
 	//Create the 9 cells and set their sprites/collision boxes.
 	void createWorld();
+
+	//Create the enemies in the world
+	void spawnEnemies();
 };
 

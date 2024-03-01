@@ -3,7 +3,7 @@ frames 1
 width 18
 height 5
 color white
-slowdown 3
+slowdown 0
 </HEADER>
 <BODY>
          _____    

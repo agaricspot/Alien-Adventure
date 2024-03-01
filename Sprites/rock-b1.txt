@@ -6,7 +6,7 @@ color white
 slowdown 3
 </HEADER>
 <BODY>
-    ___
+    ___ 
 ___/   \
 end
 </BODY>

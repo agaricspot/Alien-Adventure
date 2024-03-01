@@ -1,6 +1,8 @@
 #include "EnvironmentObject.h"
 
+#include <iostream>
 
+// Generic constructor for an environment object. Private. Only called via the makeFoo methods
 EnvironmentObject::EnvironmentObject(std::string type, df::Vector pos) {
 	setType(type);
 	setPosition(pos);
@@ -10,13 +12,15 @@ EnvironmentObject::EnvironmentObject(std::string type, df::Vector pos) {
 EnvironmentObject* EnvironmentObject::makeMushroom(std::string type, df::Vector pos) {
 	EnvironmentObject* eo = new EnvironmentObject(type, pos);
 	eo->setSprite("mushroom");
+	eo->setSolidness(df::SOFT);
 	return eo;
 }
 
-//make a flower
+//Make a flower
 EnvironmentObject* EnvironmentObject::makeFlower(std::string type, df::Vector pos) {
 	EnvironmentObject* eo = new EnvironmentObject(type, pos);
-	eo->setSprite("mushroom");
+	eo->setSprite("flower");
+	eo->setSolidness(df::SPECTRAL);
 	return eo;
 }
 
@@ -25,5 +29,13 @@ EnvironmentObject* EnvironmentObject::makeSpaceship(std::string type) {
 	EnvironmentObject* eo = new EnvironmentObject(type, df::Vector(10, 36));
 	eo->setSprite("door");
 	eo->setSolidness(df::HARD);
+	return eo;
+}
+
+//Make a rock. Value for size in input
+EnvironmentObject* EnvironmentObject::makeRock(std::string type, df::Vector pos, std::string sprite) {
+	EnvironmentObject* eo = new EnvironmentObject(type, pos);
+	eo->setSolidness(df::HARD);
+	eo->setSprite(sprite);
 	return eo;
 }

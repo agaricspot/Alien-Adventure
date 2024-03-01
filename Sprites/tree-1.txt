@@ -1,13 +1,13 @@
 <HEADER>
 frames 1
 width 8
-height 1
-color white
+height 2
+color cyan
 slowdown 3
 </HEADER>
 <BODY>
-_._/||\_  
-  _/ \__ 
+_._/||\_
+  _/ \__
 end
 </BODY>
 <FOOTER>

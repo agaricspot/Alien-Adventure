@@ -54,9 +54,9 @@ int main(int argc, char* argv[]) {
 
     new Reticle();
 
-    new Enemy();
-
     MM.createWorld();
+
+    MM.spawnEnemies();
 
     GM.run();
 
@@ -78,18 +78,30 @@ void loadResources() {
     //Enemy Sprites
     RM.loadSprite("sprites/chomper.txt", "chomper");
     RM.loadSprite("sprites/goopling.txt", "goopling");
-    
+
     //Misc Sprites
     RM.loadSprite("sprites/arrowleft.txt", "arrowleft");
     RM.loadSprite("sprites/arrowright.txt", "arrowright");
-    
+
     //Environment Sprites
     RM.loadSprite("sprites/flower1.txt", "flower");
     RM.loadSprite("sprites/flower2.txt", "flower2");
-    RM.loadSprite("sprites/space_station.txt", "door");
-    RM.loadSprite("spretes/mushroom.txt", "mushroom");
+    RM.loadSprite("sprites/mushroom.txt", "mushroom");
 
-    //Not needed right now
-    RM.loadSprite("sprites/landing-0-1.txt", "landing");
-    RM.loadSprite("sprites/cave-0-0.txt", "cave");
+    RM.loadSprite("sprites/rock_big.txt", "bigrock");
+    RM.loadSprite("sprites/rock_small.txt", "smallrock");
+    RM.loadSprite("sprites/rock-b1.txt", "hwall1");
+    RM.loadSprite("sprites/rock-b2.txt", "hwall2");
+    RM.loadSprite("sprites/rock-vert1.txt", "vwall1");
+    RM.loadSprite("sprites/rock-vert2.txt", "vwall2");
+
+    RM.loadSprite("sprites/tree.txt", "tree");
+    RM.loadSprite("sprites/tree-vert-b.txt", "talltree");
+    RM.loadSprite("sprites/tree-1.txt", "tree1");
+    RM.loadSprite("sprites/tree-dense.txt", "treedense");
+    RM.loadSprite("sprites/misc-grass-1.txt", "grass1");
+    RM.loadSprite("sprites/misc-grass-2.txt", "grass2");
+    RM.loadSprite("sprites/misc-grass-3.txt", "grass3");
+
+    RM.loadSprite("sprites/space_station.txt", "door");
 }

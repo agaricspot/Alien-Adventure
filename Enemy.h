@@ -11,10 +11,11 @@ private:
 	int attack_slowdown = 35;
 	int attack_countdown = attack_slowdown;
 
-	virtual void track();
+	void track();
+	Enemy(std::string sprite, df::Vector pos);
 
 public:
-	Enemy();
+	
 	~Enemy();
 
 	int eventHandler(const df::Event* p_e) override;
@@ -24,5 +25,8 @@ public:
 
 	//If within a few spaces, attack
 	int attack();
+
+	//Spawn an enemy. Can set the type of enemy with the argument.
+	static Enemy* spawnEnemy(std::string sprite, df::Vector pos);
 };
 
